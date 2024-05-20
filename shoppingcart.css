@@ -21,9 +21,9 @@ footer{
 
 
 hr {
-           /* Set the width of the horizontal line */
           margin: 0;
-          color: #e8e8e8; /* Set the color of the horizontal line */
+          color: #e8e8e8; 
+          border-top: solid;
 }
 
 /*details of your order*/
@@ -171,7 +171,7 @@ h2{
 .checkout_price {
     font-size: 24px;      
     font-weight: bold;
-    color: #343a40;      
+    color: #392d6e;      
     align-self: center;
     justify-content:right;
 }
