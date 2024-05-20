@@ -1,0 +1,197 @@
+/*shopping cart*/
+body{
+    margin: 0;
+}
+header{
+          background-color: #392d6e;
+          color: #ffffff;
+          width: 100%;
+          height: 100px;
+          align-items: center;
+}
+
+
+footer{
+          background-color: #392d6e;
+          color: #ffffff;
+          width: 100%;
+          height: 300px;
+          font-size: 40px;
+}
+
+
+hr {
+           /* Set the width of the horizontal line */
+          margin: 0;
+          color: #e8e8e8; /* Set the color of the horizontal line */
+}
+
+/*details of your order*/
+.your_order{
+          padding-left: 45px;
+          width: 70.5%;
+}
+
+h2{
+          color:#392d6e;
+}
+
+/*items in the shopping cart*/
+.item_list{
+          width: 65%;
+          height: auto;
+}
+
+
+.item {
+          display: flex;        /* 启用 flexbox */
+          gap: 20px;            /* 图片和文本之间的间距 */
+          height: 100px;
+          width: 680px;
+      }
+
+.item-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          width: 100%;
+          height: 100px;
+          padding: 10px 0;
+}
+
+.item_name {
+          font-size: 18px;
+          font-weight: bold;
+          text-align: start;
+          width: 300px;
+}
+
+.item_img{
+          border-radius: 10px;
+          width:100px;
+          height:100px;
+}
+
+/*quantity and price of the item*/
+.quantity_price_container{
+          display: flex;
+          flex-direction: column;
+          align-self: flex-end;
+}
+
+/*price of the item*/
+.price {
+          color: #008050;
+          font-weight: bold;
+          font-size: 20px;
+}
+
+/*quantity of the item*/
+.quantity_edit{
+          display: flex;        /* 启用 flexbox 布局 */
+          align-items: center;  /* 垂直居中所有子元素 */
+          gap: 20px;            /* spacing between the element */
+          justify-content: flex-end;
+}
+
+.quantity_frame {
+          display: flex;
+          align-items: center;
+          background: #f9f9f9;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 15px;
+          width:110px;
+          height:30px;
+          gap: 20px; 
+      }
+
+
+
+.minus_button {
+          background-color: #e8e8e8; 
+          color: #aeaeae;
+          width: 30px;
+          height: 30px;
+          border: none;
+          border-radius: 15px;
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer;
+      }
+      
+.plus_button {
+          background-color: #008050;
+          color: #ffffff;
+          width: 30px;
+          height: 30px;
+          border: none;
+          border-radius: 15px;
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer;
+      }
+
+.remove_button{
+          background: none;
+          border: none;
+          color: #8F92A1;
+          font-size: 30px;
+          cursor: pointer;
+}
+      
+.img{
+          border-radius: 10px;
+}
+
+.vertical_line {
+          width: 1px; /* width of the line */
+          background-color:#656565; /* color of the line */
+          margin: 0 40px; /* space */
+      }
+
+/*checkout bar*/
+
+.checkout_bar {
+    position: fixed;      
+    bottom: 0;            
+    right: 0;             
+    width: 100%;         
+    height: 75px;
+    background-color: #ffffff; 
+    border-top: 1px solid #dee2e6; 
+    box-shadow: 0 -1px 3px #404040; 
+    display: flex;        
+    justify-content:right; 
+    align-items: center;  
+}
+
+.checkout_price {
+    font-size: 24px;      
+    font-weight: bold;
+    color: #343a40;      
+    align-self: center;
+    justify-content:right;
+}
+
+.divider_line {
+    height: 60px;        
+    width: 1px;          
+    background-color: #000000; 
+    margin: 0px 30px;       
+}
+
+.checkout_button {
+    font-size: 16px;   
+    font-weight: bold;
+    width: 200px;
+    height:50px;
+    background-color: #008050; 
+    color: #ffffff;      
+    padding: 10px 20px;   
+    border: none;        
+    border-radius: 10px;   
+    cursor: pointer;      
+}
