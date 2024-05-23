@@ -1,154 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Shopping Cart</title>
-          <link rel="stylesheet" href="shoppingcart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="shoppingcart.css">
 </head>
 <body>
-         <header><img src="img/atls.png" alt="atls_icon"></header>
-          <br>
-         <!--Your Order-->
-         <div class="your_order">
-          <h2>Your Order (3) </h2>
-
-          <p>
-          <!--item list-->
-          <div class="item_list">
-          <!--item 1-->
-          <div class="item_container">
-                    <!--left side: item detail 1-->
-                    <div class="item">                             
-                                        <img src="img/steak.jpg" alt="Seared Steaks & Butter"
-                                        class="item_img">
-                                        <span class = "item_name">Seared Steaks & Butter</span>
-                                     
-                    <!--right side: 增减商品数量 Increase or decrease in the quantities of items-->
-                              <div class="quantity_price_container">
-                                        <div class="quantity_edit">
-                                                  <div class="quantity_frame">
-                                                            <button class="minus_button">-</button>
-                                                            <span class="quantity">   1   </span>
-                                                            <button class="plus_button">+</button>
-                                                  </div>
-                                                  <span class="price">$15.00</span>
-                                                  <button class="remove_button">×</button>
+    <header>
+        <img src="img/atls.png" alt="atls_icon" class="header-img">
+    </header>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="your_order">
+                <h2 id="your_order">Your Order (3)</h2>
+                <div class="item_list">
+                    <!--item 1-->
+                    <div class="item_container" data-index="1">
+                        <div class="item">
+                            <img src="img/steak.jpg" alt="Seared Steaks & Butter" class="item_img">
+                            <div class="item_details">
+                                <span class="item_name">Seared Steaks & Butter</span>
+                                <div class="quantity_price_container">
+                                    <div class="quantity_edit">
+                                        <div class="quantity_frame">
+                                            <button class="minus_button" data-index="1">-</button>
+                                            <span class="quantity" id="quantity-1">1</span>
+                                            <button class="plus_button" data-index="1">+</button>
                                         </div>
-                              </div>
+                                        <span class="price">$15.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_divider"></div>
                     </div>
-          <br>      
-          </div>
-          <hr>
-          <br>
-
-          <!--item 2-->
-          <div class="item_container">
-                    <!--left side: item detail 2-->
-                    <div class="item">                             
-                              <img src="img/salad.png" alt="Lemon-Tahini Kale Salad"
-                              class="item_img">
-                              <span class = "item_name">Lemon-Tahini Kale Salad </span>
-                                     
-                    <!--right side: 增减商品数量 Increase or decrease in the quantities of items-->
-                              <div class="quantity_price_container">
-                                        <div class="quantity_edit">
-                                                  <div class="quantity_frame">
-                                                            <button class="minus_button">-</button>
-                                                            <span class="quantity">   1   </span>
-                                                            <button class="plus_button">+</button>
-                                                  </div>
-                                                  <span class="price">$11.00</span>
-                                                  <button class="remove_button">×</button>
+                    <!--item 2-->
+                    <div class="item_container" data-index="2">
+                        <div class="item">
+                            <img src="img/salad.png" alt="Lemon-Tahini Kale Salad" class="item_img">
+                            <div class="item_details">
+                                <span class="item_name">Lemon-Tahini Kale Salad</span>
+                                <div class="quantity_price_container">
+                                    <div class="quantity_edit">
+                                        <div class="quantity_frame">
+                                            <button class="minus_button" data-index="2">-</button>
+                                            <span class="quantity" id="quantity-2">1</span>
+                                            <button class="plus_button" data-index="2">+</button>
                                         </div>
-                              </div>
+                                        <span class="price">$11.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_divider"></div>
                     </div>
-          <br>      
-          </div>
-          <hr>
-          <br>
-
-          <!--item 3-->
-          <div class="item_container">
-                    <!--left side: item detail 3-->
-                    <div class="item">
-                              <img src="img/shrimp.png" alt="Shrimp Fried Potatoes"
-                              class="item_img">
-                              <span class = "item_name">Shrimp Fried Potatoes </span>
-                   
-                                     
-                    <!--right side: 增减商品数量 Increase or decrease in the quantities of items-->
-                              <div class="quantity_price_container">
-                                        <div class="quantity_edit">
-                                                  <div class="quantity_frame">
-                                                            <button class="minus_button">-</button>
-                                                            <span class="quantity">   1   </span>
-                                                            <button class="plus_button">+</button>
-                                                  </div>
-                                                  <span class="price">$12.00</span>
-                                                  <button class="remove_button">×</button>
+                    <!--item 3-->
+                    <div class="item_container" data-index="3">
+                        <div class="item">
+                            <img src="img/shrimp.png" alt="Shrimp Fried Potatoes" class="item_img">
+                            <div class="item_details">
+                                <span class="item_name">Shrimp Fried Potatoes</span>
+                                <div class="quantity_price_container">
+                                    <div class="quantity_edit">
+                                        <div class="quantity_frame">
+                                            <button class="minus_button" data-index="3">-</button>
+                                            <span class="quantity" id="quantity-3">1</span>
+                                            <button class="plus_button" data-index="3">+</button>
                                         </div>
-                              </div>
+                                        <span class="price">$12.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_divider"></div>
                     </div>
-          <br>      
-          <br>      
-          </div>
-          </div><!--end of your order-->
-         
+                </div>
+            </div>
+            <!--Seperate your order and the order payment details-->
+            <div class="vertical_line"></div>
+            
+            <div class="order_payment_details">
+                <h2 id="order_details">Order Details</h2>
+                <div class="order_details">
+                    <div class="order_summary" id="order_summary">
 
-          <!--把左右两边的内容分隔开 Separate the left and right sides-->
-             <div class="vertical_line"></div>
-
-         
-         </div>
-         <!--fixed checkout bar-->
-         <div class="checkout_bar">
-            <span class="checkout_price">$40.0</span>
-            <div class="divider_line"></div>
-            <button class="checkout_button">Place Order</button>
-         </div>
-         </p>
-
-          <br>     
-          <br>     
-          <br>     
-          <br>     
-          <br>  
-          <br>     
-          <br>     
-          <br>     
-          <br>     
-          <br> 
-          <br>     
-          <br>        
-          <br>     
-          <br>     
-          <br>     
-          <br> 
-          <br>     
-          <br>     
-          <br>
-          <br>     
-          <br>     
-          <br>     
-          <br>     
-          <br>  
-          <br>     
-          <br>     
-          <br>     
-          <br>     
-          <br> 
-          <br>     
-          <br>        
-          <br>     
-          <br>     
-          <br>     
-          <br> 
-          <br>     
-          <br>     
-          <br>      
-<footer>
-ATLASWEEKLY
-</footer>
+                        <div class="order_total">
+                            <span class="item_name">Price</span>
+                            <span class="item_price" id="price_cost">$38.00</span>
+                        </div>
+                        
+                        <div class="order_item">
+                            <span class="detail_item_name">Seared Steaks & Butter</span>
+                            <span class="item_price">$15.00</span>
+                        </div>
+                        <div class="order_item">
+                            <span class="detail_item_name">Lemon-Tahini Kale Salad</span>
+                            <span class="item_price">$11.00</span>
+                        </div>
+                        <div class="order_item">
+                            <span class="detail_item_name">Shrimp Fried Potatoes</span>
+                            <span class="item_price">$12.00</span>
+                        </div>
+                    </div>
+                    <div class="divider_line"></div>
+                    <div class="order_total">
+                        <span class="item_name">Shipping</span>
+                        <span class="item_price" id="shipping_cost">$2</span>
+                    </div>
+                    <div class="divider_line"></div>
+                    <div class="order_total">
+                        <span class="item_name">Total Payment</span>
+                        <span class="item_price" id="total_payment">$40.00</span>
+                    </div>
+                </div>
+                <h2>Payment Details</h2>
+                <div class="payment_methods">
+                    <div class="add_detail">
+                        <h3>Payments</h3>
+                        <button class="add_button" type="button" onclick="location.href='payment.html'">+</button>
+                    </div>
+                    <div class="payment_method">
+                        <input type="radio" name="payment" id="card1" checked>
+                        <label for="card1" class="payment_label">
+                            <div class="card_icon"></div>
+                            <span class="card_details">Credit Card<br>1234 4567 7890 0123</span>
+                        </label>
+                    </div>
+                    <div class="payment_method">
+                        <input type="radio" name="payment" id="card2">
+                        <label for="card2" class="payment_label">
+                            <div class="card_icon"></div>
+                            <span class="card_details">Credit Card<br>1234 4567 7890 1107</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="add_detail"> 
+                        <h3>Address</h3>
+                        <button class="add_button">+</button>
+                    </div>
+                    <div class="address_details">
+                        <input type="radio" name="address" id="home" checked>
+                        <label for="home" class="address_label">
+                            <div class="home_icon"></div>
+                            <span class="address_text">Home<br>1234 / 123 Flinders Street VIC</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="add_detail"> 
+                    <h3>Contact</h3>
+                        <button class="add_button">+</button>
+                    </div>
+                    <div class="contact_details">
+                        <input type="radio" name="contact" id="Hannah" checked>
+                        <label for="Hannah" class="contact_label">
+                            <div class="contact_icon"></div>
+                            <span class="contact_text">Hannah<br>0487284721</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout_bar">
+        <span class="checkout_price">$40.00</span>
+        <div class="checkout_divider_line"></div>
+        <button class="checkout_button">Place Order</button>
+    </div>
+    <footer>ATLASWEEKLY</footer>
+    <script src="shoppingcart.js"></script>
 </body>
 </html>
