@@ -1,3 +1,18 @@
+html, body {
+  margin: 0;
+  margin-right: 0px;
+  padding: 0;
+  
+  overflow-x: hidden;  /* 隐藏水平方向的溢出内容 */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;  /* 包括边框和内边距在内的宽度计算 */
+}
+
+
 /* 顶部导航栏的东西 */
 .topbar2 {
     border: 0 solid;
@@ -151,7 +166,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* sign-up - 1280px */
   .sign-up {
     padding: 10px 16px;
     font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
@@ -194,12 +208,6 @@
   }
 }
 
-/* lv7y8l */
-.css-lv7y8l {
-  border: 0 solid;
-  margin: 0;
-  color: #392d6e;
-}
 
 /* 文字部分标题 */
 .title1 {
@@ -215,8 +223,6 @@
 }
 
 .title3 {
-  border: 0 solid;
-  margin: 0;
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
@@ -226,7 +232,7 @@
 
   .title-words1 {
     border: 0 solid;
-    margin: 0;
+    margin-top: 0;
     text-align: center;
     color: #fff;
     padding-bottom: 8px;
@@ -235,7 +241,6 @@
   }
   
   @media screen and (min-width: 1536px) {
-    /* title-words1 - 1536px */
     .title-words1 {
       padding-bottom: 36px;
     }
@@ -244,37 +249,30 @@
   .title-words2 {
     border: 0 solid;
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
     font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     font-weight: 400;
-    -webkit-letter-spacing: -0.3px;
-    -moz-letter-spacing: -0.3px;
-    -ms-letter-spacing: -0.3px;
     letter-spacing: -0.3px;
     text-transform: none;
     font-size: 26px;
     line-height: 36px;
   }
   
-  @media screen and (min-width: 640px) {
-    /* title-words2 - 640px */
+  @media screen and (max-width: 390px) {
     .title-words2 {
-      font-size: 28px;
-      -webkit-letter-spacing: -0.4px;
-      -moz-letter-spacing: -0.4px;
-      -ms-letter-spacing: -0.4px;
+      font-weight: 100;
+      font-size: 20px;
       letter-spacing: -0.4px;
       line-height: 40px;
+      padding-bottom: 2px;
     }
   }
   
-  @media screen and (min-width: 1536px) {
-    /* title-words2 - 1536px */
+  @media screen and (min-width: 1368px) {
     .title-words2 {
       font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
       font-weight: 400;
-      -webkit-letter-spacing: -0.6px;
-      -moz-letter-spacing: -0.6px;
-      -ms-letter-spacing: -0.6px;
       letter-spacing: -0.6px;
       text-transform: none;
       font-size: 32px;
@@ -301,39 +299,28 @@
     color: inherit;
     font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     font-weight: 400;
-    -webkit-letter-spacing: -0.3px;
-    -moz-letter-spacing: -0.3px;
-    -ms-letter-spacing: -0.3px;
-    letter-spacing: -0.3px;
     text-transform: none;
     font-size: 26px;
     line-height: 36px;
   }
   
-  @media screen and (min-width: 640px) {
-    /* title-words3 - 640px */
-    .title-words3 {
-      font-size: 28px;
-      -webkit-letter-spacing: -0.4px;
-      -moz-letter-spacing: -0.4px;
-      -ms-letter-spacing: -0.4px;
-      letter-spacing: -0.4px;
-      line-height: 40px;
-    }
-  }
   
-  @media screen and (min-width: 1536px) {
-    /*  - 1536px */
+  @media screen and (max-width: 1368px) {
     .title-words3 {
       font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
       font-weight: 400;
-      -webkit-letter-spacing: -0.6px;
-      -moz-letter-spacing: -0.6px;
-      -ms-letter-spacing: -0.6px;
       letter-spacing: -0.6px;
       text-transform: none;
-      font-size: 32px;
+      font-size: 25px;
       line-height: 44px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .title-words3 {
+      font-size: 18px;
+      letter-spacing: -0.4px;
+      line-height: 18px;
     }
   }
   
@@ -355,7 +342,7 @@
   /* 菠萝元素 */
   .pineapple11 {
     border: 0 solid;
-    margin: 0;
+    margin-top: 20px;
     position: absolute;
     -webkit-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -799,12 +786,10 @@
     border: 0 solid;
     margin: 0;
     position: absolute;
-    -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
     transform: scale(0.6);
     z-index: 1;
     display: none;
-    left: -102px;
+    left: 10px;
     top: -24px;
     pointer-events: none;
     width: 226px;
@@ -812,7 +797,6 @@
   }
   
   @media screen and (min-width: 640px) {
-    /* element-vege1  - 640px */
     .element-vege1  {
       -webkit-transform: scale(0.7);
       -ms-transform: scale(0.7);
@@ -982,39 +966,26 @@
     position: absolute;
     left: -16px;
     bottom: -56px;
-    -webkit-transform: rotate(-40deg) scale(0.4);
-    -ms-transform: rotate(-40deg) scale(0.4);
-    transform: rotate(-40deg) scale(0.4);
+    transform: rotate(-40deg) scale(0.6);
     pointer-events: none;
-    width: 95px;
-    height: 131px;
+    width: 130px;
+    height: auto;
   }
   
-  @media screen and (min-width:640px) {
+  @media screen and (max-width:1368px) {
     .grass22 {
-      left: 48px;
-      bottom: -48px;
-      -webkit-transform: rotate(-40deg) scale(0.7);
-      -ms-transform: rotate(-40deg) scale(0.7);
-      transform: rotate(-40deg) scale(0.7);
+      margin-left: 100px;
+      transform: rotate(-40deg) scale(1);
     }
   }
-  
-  @media screen and (min-width:1024px) {
+
+  @media screen and (max-width:390px) {
     .grass22 {
-      left: 20%;
-      -webkit-transform: rotate(-40deg) scale(0.8);
-      -ms-transform: rotate(-40deg) scale(0.8);
-      transform: rotate(-40deg) scale(0.8);
+      transform: scale(0.5);
+      margin-left: 30px;
     }
   }
-  
-  @media screen and (min-width:1536px) {
-    .grass22 {
-      left: 30%;
-    }
-  }
- 
+
 
   /* homepage-bottom1 */
 .homepage-bottom1 {
@@ -1038,6 +1009,13 @@
     padding-top: 32px;
     padding-bottom: 0px;
   }
+
+  @media screen and (min-width:390px) {
+    .homepage-bottom3 {
+      padding-top: 0px;
+      padding-bottom: 1px;
+    }
+  }
   
   .homepage-b4 {
     border: 0 solid;
@@ -1059,10 +1037,10 @@
     padding-right: 8px;
   }
   
-  @media screen and (min-width:640px) {
+  @media screen and (max-width:390px) {
     .homepage-b5 {
       padding-top: 0px;
-      padding-bottom: 1px;
+      padding-left: 0px;
     }
   }
   
@@ -1080,7 +1058,7 @@
     line-height: 24px;
   }
   
-  @media screen and (min-width:640px) {
+  @media screen and (max-width:390px) {
     .homepage-b6 {
       font-size: 20px;
       line-height: 28px;
@@ -1112,7 +1090,8 @@
 /* element!! */
 .element-pineapple3 {
     border: 0 solid;
-    margin: 0;
+    margin-left: 90px;
+    margin-top: 50px;
     position: absolute;
     z-index: 3;
     display: none;
@@ -1140,73 +1119,68 @@
   
   .element-vege2 {
     border: 0 solid;
-    margin: 0;
+    margin-right: 200px;
+    margin-top: 200px;
     position: absolute;
-    -webkit-transform: rotate(-85deg) scale(0.6) scaleX(-1);
-    -ms-transform: rotate(-85deg) scale(0.6) scaleX(-1);
-    transform: rotate(-85deg) scale(0.6) scaleX(-1);
     z-index: 4;
-    bottom: -10px;
+    bottom: 180px;
     right: -86px;
     pointer-events: none;
     width: 163px;
     height: 189px;
+    transform: rotate(-85deg) scale(0.8) scaleX(-1);
+
   }
   
-  @media screen and (min-width:640px) {
+
+  @media screen and (max-width:1368px) {
     .element-vege2 {
-      -webkit-transform: rotate(-77deg) scale(.7) scaleX(-1);
-      -ms-transform: rotate(-77deg) scale(.7) scaleX(-1);
-      transform: rotate(-77deg) scale(.7) scaleX(-1);
-      bottom: unset;
-      top: -8px;
+      margin-right: 120px;
     }
   }
-  
-  @media screen and (min-width:1024px) {
+
+  @media screen and (max-width:390px) {
     .element-vege2 {
-      -webkit-transform: rotate(-77deg) scale(.9) scaleX(-1);
-      -ms-transform: rotate(-77deg) scale(.9) scaleX(-1);
-      transform: rotate(-77deg) scale(.9) scaleX(-1);
-      right: -102px;
-      top: -24px;
+      transform:scale(0.5);
+      margin-right: 15px;
+      margin-bottom: -160px;
     }
   }
+
   
   .element-onion1 {
     border: 0 solid;
-    margin: 0;
+    margin-right: 200px;
+    margin-top: 210px;
     position: absolute;
-    -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
     transform: scale(0.6);
     z-index: 3;
-    bottom: -24px;
-    right: -39px;
+    bottom: 160px;
+    right: 5px;
     pointer-events: none;
     width: 113px;
     height: 131px;
   }
   
-  @media screen and (min-width:640px) {
-    .element-onion1  {
-      -webkit-transform: scale(0.7);
-      -ms-transform: scale(0.7);
-      transform: scale(0.7);
-      bottom: unset;
-      top: 80px;
+  @media screen and (max-width:1368px) {
+    .element-onion1 {
+     margin-right: 120px;
+     transform: scale(1);
     }
-  }
-  
-  @media screen and (min-width:1024px) {
-    .element-onion1  {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      top: 72px;
+}
+
+@media screen and (max-width:390px) {
+    .element-onion1 {
+    width: 30%;
+    height: auto;
+    margin-right: -40px;
+    bottom: -10px;
+    transform: scale(0.6); 
     }
-  }
-  
+}
+
+
+
 
   .homepage-part2-words {
         color: #392D60; /* 深紫色 */
@@ -1218,33 +1192,96 @@
         padding: 0px 36px; /* 内边距 */
         text-align: center;
     }
+
+    @media screen and (max-width:390px) {
+      .homepage-part2-words  {
+        font-size: 18px; /* 字体大小 */
+      }
+  }
+  
     
-.homepage-part2-image{
+  .homepage-part2-image {
     margin-top: 50px;
     text-align: center;
 }
-    
+
+.homepage-part2-image1 {
+    width: 100%; /* 让图片在容器内自动调整大小 */
+    height: auto; /* 保持图片的宽高比 */
+}
+
+@media screen and (max-width: 390px) {
+    .homepage-part2-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+  .homepage-part2-image1 {
+      width: 50%;
+  }
+}
+
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
-        background-color: #271c2f;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: #392d6e;
         color: #ffffff;
         height: 50px;
-    }
-    
-    .logo {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
+      }
+
+    .menu-icon {
+      display: none; /* Initially hidden on larger screens */
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+  }
+  
+  @media (max-width: 390px) {
+      .menu {
+          display: none; /* Hide other menu options on small screens */
+      }
+  
+      .menu-icon {
+          display: block; /* Show the hamburger menu icon on small screens */
+      }
+  
+      .popup222 {
+          display: none; /* 默认不显示，点击后显示 */
+          position: absolute;
+          background-color: white;
+          color: black;
+          width: 150px;
+          border-radius: 20px;
+          z-index: 1000;
+          margin-top: 7px; /* 位置调整为紧贴链接下方 */
+          margin-left: -10px; /* 让下拉菜单左对齐父链接 */
+          box-shadow: 0 4px 8px rgba(0,0,0,0.8);  
+      }
+
+      .popup222 a{
+        margin-left: 0%;
+    padding: 10px 15px;
+    display: block; /* 让链接填充整个容器宽度 */
+    text-decoration: none;
+    color: black; /* 文本颜色 */
+    border-bottom: 1px solid #ccc;
+    text-align: center; /* 居中所有文本 */
+      }
+  }
     
     .menu a,
     .actions a {
         color: white;
         text-decoration: none;
-        margin-left: 20px;
-        font-size: 1em;
+        margin-left: 30px;
+        font-size: 1.2em;
         position: relative; /* Needed for tooltip positioning */
     }
     
@@ -1259,22 +1296,40 @@
         color: white;
     }
     
-    .tooltip {
-    visibility: hidden;
-    width: 160px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 150%; /* Adjust this value as needed to position tooltip below the link */
-    left: 50%;
-    margin-left: -80px; /* Adjust to center the tooltip */
-    opacity: 0;
-    transition: opacity 0.5s;
-}
+    .dropdown-menu {
+      display: none; /* 默认不显示，点击后显示 */
+      position: absolute;
+      background-color: white;
+      color: black;
+      width: 150px;
+      border-radius: 20px;
+      z-index: 1000;
+      margin-top: 7px; /* 位置调整为紧贴链接下方 */
+      margin-left: 15px; /* 让下拉菜单左对齐父链接 */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+      
+  }
+  
+  .dropdown-menu a {
+    margin-left: 0%;
+    padding: 10px 15px;
+    display: block; /* 让链接填充整个容器宽度 */
+    text-decoration: none;
+    color: black; /* 文本颜色 */
+    border-bottom: 1px solid #ccc;
+    text-align: center; /* 居中所有文本 */
+  }
+  
+  .dropdown-menu a:hover {
+      background-color: #f1f1f1; /* 鼠标悬停时的背景色 */
+  }
+  
+  .arrow{
+    width:20px;
+    height: auto;
+  }
+
+  
 
 .category {
     display: block; /* Makes each category appear on a new line */
@@ -1370,21 +1425,43 @@ button:hover {
     }
 }
 
-/* 添加以下内容到你的 CSS 文件中 */
+
 .responsive-img {
     width: 100%;
     height: auto;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 390px) {
     .responsive-img {
-        width: 80%;
+        width: 70%;
+      
     }
 }
-@media (max-width: 480px) {
-    .responsive-img {
-        width: 60%;
-    }
+
+@media (max-width: 390px) {
+  .responsive1person{
+      width: 12%;
+      margin-top: 15px;
+      margin-left: 55px;
+  }
 }
+
+@media (max-width: 390px) {
+  .responsive2person{
+      width: 20%;
+      margin-top: 8px;
+      margin-left: 55px;
+  }
+}
+
+@media (max-width: 390px) {
+  .responsive4person{
+      width: 24%;
+      margin-top: 10px;
+      margin-left: 55px;
+  }
+}
+
 
 
 
@@ -1404,4 +1481,178 @@ button:hover {
         width: 90%;
         max-width: 90%;
     }
+}
+
+/* 啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊吗*/
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer; /* 提示用户可以点击 */
+}
+
+.filter-item i.fa {
+  margin: 0 5px;
+}
+
+.filter-item span {
+  margin-right: 5px;
+}
+
+.dropdown-menu11 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+  margin-top: 10px;
+  padding: 5px 0;
+  width: 150px; /* 根据需要调整 */
+  z-index: 1000;
+  border-radius: 20px;
+}
+
+.dropdown-menu11 a {
+  padding: 8px 15px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  text-align: center; /* 居中所有文本 */
+}
+
+.dropdown-menu11 a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu11 a:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-item {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.cards-container {
+  display: flex; /* 设置 Flexbox */
+  flex-wrap: wrap; /* 允许元素换行 */
+  gap: 8px; /* 设置元素间距 */
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px; /* 容器内边距 */
+}
+
+.card {
+  flex: 1 1 200px; /* 每个卡片至少200px宽，但可以增长 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin: 5px; /* 增加卡片间隔 */
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  padding: 18px;
+  text-align: left;
+}
+
+.info h3 {
+  margin-top: 0;
+  margin-bottom: 1px;
+  color: #392d6e;
+  font-size: 1rem;
+}
+
+.info p {
+  color: #392d6e;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #6e656c;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: #008050;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #a6d2c1;
+}
+
+/* 媒体查询部分 */
+@media (max-width: 768px) {
+  .cards-container {
+      margin: 0%;
+      justify-content: space-around; /* 确保在小屏幕上两列均匀分布 */
+  }
+  .card {
+      margin-bottom: 20px;
+      flex: 1 1 40%; /* 在较小屏幕上使每个卡片占据近一半宽度 */
+  }
+}
+
+@media (min-width: 844px) {
+  .cards-container {
+      justify-content: space-between; /* 确保在较大屏幕上四个卡片均匀分布 */
+  }
+  .card {
+      flex: 1 1 22%; /* 在较大屏幕上使每个卡片占据四分之一宽度 */
+  }
+}
+
+/* 默认情况下，显示 footer1 图片，并隐藏 footer2 图片 */
+.footer1 {
+  width: 100%;
+  display: block; /* 确保 footer1 在大屏幕上显示 */
+}
+
+.footer2 {
+  display: none; /* 默认隐藏 footer2 */
+  width: 100%;
+}
+
+/* 当屏幕宽度小于等于 1368px 时，仍然只显示 footer1 图片 */
+@media (max-width: 1368px) {
+  .footer1 {
+    display: block; /* 确保 footer1 在中等屏幕上显示 */
+  }
+  .footer2 {
+    display: none; /* 保持 footer2 在这个屏幕尺寸下隐藏 */
+  }
+}
+
+/* 当屏幔宽度小于等于 390px 时，隐藏 footer1 并显示 footer2 */
+@media (max-width: 390px) {
+  .footer1 {
+    display: none; /* 在小屏幕上隐藏 footer1 */
+  }
+  .footer2 {
+    display: block; /* 在小屏幕上显示 footer2 */
+  }
 }
