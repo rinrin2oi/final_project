@@ -20,16 +20,17 @@ header {
 }
 
 footer {
+    margin: 0;
     background-color: #392d6e;
     color: #ffffff;
     width: 100%;
     text-align: left;
     padding: 20px 0;
-    position: fixed;
     bottom: 0;
     left: 0;
 }
 
+/* Container */
 .container {
     display: flex;
     flex-direction: column;
@@ -50,7 +51,19 @@ footer {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    width: 30%;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.add-card-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 h2 {
@@ -65,35 +78,53 @@ h2 {
 .input-group label {
     display: block;
     margin-bottom: 5px;
-    color: #888;
+    color: #858484;
+    width: 100%;
 }
 
 .input-group input {    
     background-color: #e8e8e8;
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin: 0;
 }
 
 button {
     background: #008050;
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    align-content: center;
 }
 
 .card-preview {
     text-align: center;
     margin-bottom: 20px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-preview img {
-    max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
+    padding-right: 7px;
+}
+
+/* Vertical Line */
+.vertical_line {
+    width: 1px;
+    background-color: #656565;
+    height: auto;
+    align-self: stretch;
+    gap: 20px;
 }
 
 .payment_methods, .address, .contact {
@@ -104,21 +135,27 @@ button {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #008050;
     padding: 10px;
     border-radius: 10px;
 }
 
 .payment_method input, .address_details input, .contact_details input {
-    margin-right: 10px;
+    display: none;
 }
 
-.card_icon, .home_icon, .user_icon {
+.card_icon, .home_icon, .contact_icon {
     width: 30px;
     height: 30px;
     background-color: #e8e8e8;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.payment_label, .address_label, .contact_label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media (min-width: 768px) {
@@ -129,7 +166,7 @@ button {
     }
 
     .add-card {
-        width: 30%;
+        width: 65%;
     }
     
     .payment_details {
@@ -138,20 +175,24 @@ button {
 
     .add-card {
         order: 1;
+        width: 65%;
     }
 
     .card-preview {
         order: 2;
         margin: 0 10px;
-        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .card-preview img {
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .vertical_line {
+        display: block;
     }
 
     .payment_details {
@@ -162,6 +203,17 @@ button {
 @media (max-width: 844px) {
     .container {
         flex-direction: column;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-card-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .card-preview {
@@ -175,6 +227,10 @@ button {
         order: 2;
         width: 100%;
         padding: 0;
+    }
+    
+    .vertical_line {
+        display: none;
     }
 
     .payment_details {

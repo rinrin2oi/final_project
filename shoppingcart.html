@@ -12,6 +12,7 @@
     </header>
     <div class="container">
         <div class="content-wrapper">
+            <!--Left part of the page-->
             <div class="your_order">
                 <h2 id="your_order">Your Order (3)</h2>
                 <div class="item_list">
@@ -77,61 +78,70 @@
                     </div>
                 </div>
             </div>
-            <!--Seperate your order and the order payment details-->
+            <!--Separate your order and the order payment details-->
             <div class="vertical_line"></div>
-            
+            <!--Right part of the page-->
             <div class="order_payment_details">
+                <!--Order Details (top part)-->
                 <h2 id="order_details">Order Details</h2>
                 <div class="order_details">
+                    <!--Sum of the cost of the item in shopping cart-->
+                    <div class="order_total">
+                        <span class="item_name">Price</span>
+                        <span class="item_price" id="price_cost">$38.00</span>
+                    </div>
+                    <!--Sum of the cost of the single item-->
                     <div class="order_summary" id="order_summary">
-
-                        <div class="order_total">
-                            <span class="item_name">Price</span>
-                            <span class="item_price" id="price_cost">$38.00</span>
-                        </div>
-                        
+                        <!--Cost of item 1-->
                         <div class="order_item">
                             <span class="detail_item_name">Seared Steaks & Butter</span>
                             <span class="item_price">$15.00</span>
                         </div>
+                        <!--Cost of item 2-->
                         <div class="order_item">
                             <span class="detail_item_name">Lemon-Tahini Kale Salad</span>
                             <span class="item_price">$11.00</span>
                         </div>
+                        <!--Cost of item 3-->
                         <div class="order_item">
                             <span class="detail_item_name">Shrimp Fried Potatoes</span>
                             <span class="item_price">$12.00</span>
                         </div>
                     </div>
                     <div class="divider_line"></div>
+                    <!--Shipping of the order-->
                     <div class="order_total">
                         <span class="item_name">Shipping</span>
                         <span class="item_price" id="shipping_cost">$2</span>
                     </div>
                     <div class="divider_line"></div>
+                    <!--Total payment of the order-->
                     <div class="order_total">
                         <span class="item_name">Total Payment</span>
                         <span class="item_price" id="total_payment">$40.00</span>
                     </div>
                 </div>
+                <!--Payment details of the user-->
                 <h2>Payment Details</h2>
                 <div class="payment_methods">
                     <div class="add_detail">
                         <h3>Payments</h3>
                         <button class="add_button" type="button" onclick="location.href='payment.html'">+</button>
                     </div>
+                    <!--Card 1 of the user-->
                     <div class="payment_method">
                         <input type="radio" name="payment" id="card1" checked>
                         <label for="card1" class="payment_label">
-                            <div class="card_icon"></div>
-                            <span class="card_details">Credit Card<br>1234 4567 7890 0123</span>
+                            <img src="img/card1.jpg" alt="card_icon" class="card_icon">
+                            <span class="card_details"><b>Credit Card</b><br>1234 4567 7890 0123</span>
                         </label>
                     </div>
+                    <!--Card 2 of the user-->
                     <div class="payment_method">
                         <input type="radio" name="payment" id="card2">
                         <label for="card2" class="payment_label">
-                            <div class="card_icon"></div>
-                            <span class="card_details">Credit Card<br>1234 4567 7890 1107</span>
+                            <img src="img/card2.jpg" alt="card_icon" class="card_icon">
+                            <span class="card_details"><b>Credit Card</b><br>1234 4567 7890 1107</span>
                         </label>
                     </div>
                 </div>
@@ -140,11 +150,12 @@
                         <h3>Address</h3>
                         <button class="add_button">+</button>
                     </div>
+                    <!--Address details of the user-->
                     <div class="address_details">
                         <input type="radio" name="address" id="home" checked>
                         <label for="home" class="address_label">
-                            <div class="home_icon"></div>
-                            <span class="address_text">Home<br>1234 / 123 Flinders Street VIC</span>
+                            <img src="img/home.jpg" alt="home_icon" class="card_icon">
+                            <span class="address_text"><b>Home</b><br>1234 / 123 Flinders Street VIC</span>
                         </label>
                     </div>
                 </div>
@@ -153,11 +164,12 @@
                     <h3>Contact</h3>
                         <button class="add_button">+</button>
                     </div>
+                    <!--Contact details of the user-->
                     <div class="contact_details">
                         <input type="radio" name="contact" id="Hannah" checked>
                         <label for="Hannah" class="contact_label">
-                            <div class="contact_icon"></div>
-                            <span class="contact_text">Hannah<br>0487284721</span>
+                            <img src="img/contact.jpg" alt="contact_icon" class="card_icon">
+                            <span class="contact_text"><b>Hannah</b><br>0487284721</span>
                         </label>
                     </div>
                 </div>
@@ -169,7 +181,9 @@
         <div class="checkout_divider_line"></div>
         <button class="checkout_button">Place Order</button>
     </div>
-    <footer>ATLASWEEKLY</footer>
+    <footer>    
+        <img src="img/atls.png" alt="atls_icon" class="header-img">
+    </footer>
     <script src="shoppingcart.js"></script>
 </body>
 </html>
