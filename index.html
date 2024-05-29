@@ -10,14 +10,33 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">Atlas Weekly</div>
-        <div class="menu">
-            <a href="#recipeboxes">RECIPE 1111BOXES <span class="tooltip">Various meal options</span></a>
-            <a href="#howitworks">HOW IT WORKS <span class="tooltip">Learn how we operate</span></a>
-            <a href="#searchrecipes">SEARCH RECIPES <span class="tooltip">Find your favorite dishes</span></a>
-            <a href="#giftcards">GIFT CARDS <span class="tooltip">Give the gift of great food</span></a>
+        <div class="mobile-menu11">
+            <div class="menu-icon" onclick="togglePopup()">☰</div>
+            <div class="popup222" id="popup" style="display: none;">
+                <a href="#home">Home</a>
+                <a href="#allrecipes">All Recipes</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#login">Log In</a>
+            </div>
         </div>
-    
+
+          <img width="175" src="images/logo528.png" alt="logo528">
+        <div class="menu">
+            <a href="#recipeboxes">ALL RECIPES</a>
+            <!-- arrow 但是还没有link上！ -->
+            <img src="images/arrow.png" alt="arrow" class="arrow">
+            <div class="dropdown-menu">
+                <a href="#">All Recipes</a>
+                <a href="#">Mexico</a>
+                <a href="#">Greece</a>
+                <a href="#">Thailand</a>
+                <a href="#">China</a>
+                <a href="#">South America</a>
+                </div>
+            
+            <a href="#howitworks">ABOUT US</a>
+        </div>
+
 
         <div class="topbar2">
             <div class="topbar3">
@@ -31,18 +50,14 @@
 
     </nav>
     
-
-
     <section id="homepage-hero" class="title1">
         <div class="title2">
             <div class="title3">
                 <div class="title-words1">
                     <h1 id="hero-heading" class="title-words2">
-                        <span data-testid="text-no-emphasis" id="hero-heading-line-1" class="title-words3">94% of customers say atlas weekly </span>
-                        <span data-testid="text-no-emphasis" id="hero-heading-line-2" class="title-words3"><br>has made healthy eating easier for them </span></h1>
-        <div class="words-uk">Discover the #1 rated recipe box</div></div>
-       
-       
+                        <span class="title-words3">94% of customers say atlas weekly </span>
+                        <span class="title-words3"><br>has made healthy eating easier for them </span></h1>
+                    </div>
        
         <div class="pineapple11">
             <picture>
@@ -66,7 +81,7 @@
 <div class="imgleft-1p">
     <picture>
         <source class="responsive-img" media="(min-width: 640px)" width="90" srcset="images/1person-test.avif">
-        <img alt="1 person" loading="eager" width="24" src="images/1person-mobile.avif">
+        <img class="responsive1person" alt="1 person" loading="eager" width="24" src="images/1person-mobile.avif">
 </picture></div></div>
 
 
@@ -76,14 +91,15 @@
 
 <div class="imgmiddle-2p">
     <picture><source media="(min-width: 640px)" width="90" srcset="images/2person-desktop.avif">
-        <img alt="2 person" loading="eager" width="20" src="images/2person-mobile-1.png">
+        <img class="responsive2person" alt="2 person" loading="eager" width="20" src="images/2person-mobile-1.png">
     </picture></div></div>
 
 <div class="imgright">
     <img  class="responsive-img" loading="eager" width="360" src="images/tiger.avif">
 
-<div class="imgright-4p"><picture><source media="(min-width: 640px)" width="160" srcset="images/4person-desktop.avif">
-    <img alt="4 person" loading="eager" width="28" src="images/4person-mobile-1.avif"></picture></div></div>
+<div class="imgright-4p">
+    <picture><source media="(min-width: 640px)" width="160" srcset="images/4person-desktop.avif">
+    <img class="responsive4person" alt="4 person" loading="eager" width="28" src="images/4person-mobile-1.avif"></picture></div></div>
 
 <div class="imgpart">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -95,9 +111,10 @@
 
 <div class="element-pineapple3"><picture><img alt="" loading="auto" width="133" height="154" src="images/pineapple3.png"></picture></div>
 
-<div class="element-vege2"><picture><img alt="" loading="auto" width="163" height="189" src="images/vege2.png"></picture></div>
+<div class="element-vege2"><picture><img class="vege2222 "alt="" loading="auto" width="163" height="189" src="images/vege2.png"></picture></div>
 
-<div class="element-onion1 "><picture><img alt="" loading="auto" width="113" height="131" src="images/onion1.png"></picture></div></div></div>
+<div class="element-onion1 "><picture><img class="onion1111" alt="" loading="auto" width="113" height="131" src="images/onion1.png"></picture></div></div></div>
+
 
 <div class="homepage-bottom1">
     <section class="homepage-bottom2">
@@ -130,54 +147,63 @@
         </div>
     </section>
 </div>
+
 </section>
 
 <h1 class="homepage-part2-words">Over 30 million meals delivered to more than 400,000 happy customers</h1>
 
-<div class="homepage-part2-image"><img width="600" src="https://www.atlasweekly.com.au/cdn/shop/files/Atlas_rebrand_lr_122.jpg?v=1679379147&width=1280" alt="Person Eating"></div>
+<div class="homepage-part2-image"><img class="homepage-part2-image1" width="600" src="https://www.atlasweekly.com.au/cdn/shop/files/Atlas_rebrand_lr_122.jpg?v=1679379147&width=1280" alt="Person Eating"></div>
+
+
 
 <div class="cards-container">
-
     <div class="card">
-        <img src="https://media.blueapron.com/recipes/46278/square_newsletter_images/1713737563-26069-0068-8695/0527_2PV2_Creamy-Tomato-Pizza_658_SQ_Web.jpg?quality=80&width=1300&format=pjpg" alt="Seared Steaks & Caper">
+        <img src="images/f10-Pork Chops & Savory Pan Sauce.jpeg" alt="Pork Chops & Savory Pan Sauce">
         <div class="info">
-            <h3>Seared Steaks & Caper</h3>
-            <p>$15.00</p>
+            <h3>Pork Chops & Savory Pan</h3>
+            <p>$18.00</p>
             <button>Add to Cart</button>
         </div>
     </div>
 
-
-<div class="card">
-    <img src="https://media.blueapron.com/recipes/46278/square_newsletter_images/1713737563-26069-0068-8695/0527_2PV2_Creamy-Tomato-Pizza_658_SQ_Web.jpg?quality=80&width=1300&format=pjpg" alt="Seared Steaks & Caper">
-    <div class="info">
-        <h3>Seared Steaks & Caper</h3>
-        <p>$15.00</p>
-        <button>Add to Cart</button>
+    <div class="card">
+        <img src="images/f11-Creamy Pesto Chicken & Orzo.jpeg" alt="Creamy Pesto Chicken & Orzo">
+        <div class="info">
+            <h3>Creamy Pesto Chicken</h3>
+            <p>$16.00</p>
+            <button>Add to Cart</button>
+        </div>
     </div>
 </div>
 
-<div class="card">
-    <img src="https://media.blueapron.com/recipes/46278/square_newsletter_images/1713737563-26069-0068-8695/0527_2PV2_Creamy-Tomato-Pizza_658_SQ_Web.jpg?quality=80&width=1300&format=pjpg" alt="Seared Steaks & Caper">
-    <div class="info">
-        <h3>Seared Steaks & Caper</h3>
-        <p>$15.00</p>
-        <button>Add to Cart</button>
-    </div>
-</div>
+<img class="footer1" src="images/footer.png" alt="footer">
+<img class="footer2" src="images/mobilefooter.png" alt="footer2">
 
-<div class="card">
-    <img src="https://media.blueapron.com/recipes/46278/square_newsletter_images/1713737563-26069-0068-8695/0527_2PV2_Creamy-Tomato-Pizza_658_SQ_Web.jpg?quality=80&width=1300&format=pjpg" alt="Seared Steaks & Caper">
-    <div class="info">
-        <h3>Seared Steaks & Caper</h3>
-        <p>$15.00</p>
-        <button>Add to Cart</button>
-    </div>
-</div>
 
-</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var link = document.querySelector('a[href="#recipeboxes"]');
+        var dropdown = document.querySelector('.dropdown-menu');
+    
+        // 监听链接点击，切换下拉菜单的显示状态
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止链接默认的跳转行为
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    
+        // 点击除链接外的其他地方隐藏下拉菜单
+        document.addEventListener('click', function(event) {
+            if (!link.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    });
+    </script>
 
 <script src="第二次.js"></script>
+
 
 </body>
 </html>
