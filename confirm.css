@@ -17,17 +17,6 @@ header {
           width: 150px;
           height: 150px;
 }
-      
-footer {
-          background-color: #392d6e;
-          color: #ffffff;
-          width: 100%;
-          height: 400px;
-          display: flex;
-          align-items: flex-start;
-          padding-top: 30px;
-          padding-left: 20px;
-}
 
 .container {
           display: flex;
@@ -137,3 +126,34 @@ button{
                     height: auto;
           }
 }
+
+/* By Default, footer1 images are shown and footer2 images are hidden */
+.footer1 {
+    width: 100%;
+    display: block; /* Ensure that footer1 is displayed on the big screen */
+  }
+  
+  .footer2 {
+    display: none; /* Hide footer2 by default */
+    width: 100%;
+  }
+  
+  /* When the screen width is less than or equal to 1368px, only the footer1 image will still be displayed. */
+  @media (max-width: 1368px) {
+    .footer1 {
+      display: block; /* Make sure footer1 is displayed on the medium screen */
+    }
+    .footer2 {
+      display: none; /* Keep footer2 hidden at this screen size. */
+    }
+  }
+  
+  /* Hide footer1 and show footer2 when the screen mantle width is less than or equal to 390px. */
+  @media (max-width: 390px) {
+    .footer1 {
+      display: none; /* Hide footer1 on small screens */
+    }
+    .footer2 {
+      display: block; /* Display footer2 on a small screen */
+    }
+  }

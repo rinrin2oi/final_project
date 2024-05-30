@@ -1,0 +1,172 @@
+body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+          background: #FCF9ED;
+}
+
+header {
+          background-color: #392d6e;
+          color: #ffffff;
+          width: 100%;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
+}
+      
+.header-img {
+          width: 150px;
+          height: 150px;
+}
+
+.container {
+          width: 100%;
+          display: flex;
+          justify-content:center;
+          align-items: center;
+}
+
+.signup-box {
+          margin-top: 100px;
+          margin-bottom: 200px;
+          padding: 10px;
+          width: 465px;
+          height: 350px;
+          background-color: #ffffff;
+          border: 1.5px solid #008050;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          backdrop-filter: blur(15px);
+}
+
+.signup-box h2 {
+          font-size: 20px;
+          color: #008050;
+          text-align: center;
+}
+
+.input-box input {
+          position: relative;
+          width: 408px;
+          height: 45px;
+          margin: 5px 0;
+          border: 1.5px solid #c4c4c4;
+          border-radius: 10px;
+          font-size: 18px;
+          font-weight: lighter;
+          color: #7B7B7B;
+}
+
+.hint{
+          justify-content: center;
+          align-self: center;
+          color: #7B7B7B;
+          display: flex;
+          font-size: 14px;
+}
+
+.login{
+          color: #000000;
+}
+
+button {
+          color: #ffffff;
+          background-color: #008050;
+          border-color: #008050;
+          border-radius: 10px;
+          width: 408px;
+          height: 45px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          box-shadow: none;
+}
+
+.account, .option {
+          padding-top: 10px;
+          justify-content: center;
+          align-self: center;
+}
+
+/*Responsive Design*/
+@media (max-width: 844px) {
+          .container{
+                    flex-direction: column;
+                    align-items: center;
+          }
+
+          .login-box{
+                    width: 300px;
+                    height:345px;
+          }
+
+          .input-box{
+                    width: 290px;
+                    height: 35px;
+                    align-self: center;                    
+                    margin-bottom: 10px;
+          }
+          
+          .input-box input{
+                    border-radius: 5px;
+                    width: 290px;
+                    height: 35px;
+                    justify-content: center;
+                    align-self: center;
+                    padding: 0;
+                    margin-bottom: 5px;
+          }
+
+          button {                    
+                    border-radius: 5px;
+                    width: 290px;
+                    height: 35px;
+                    align-self: center;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+          }
+
+          .hint{
+                    flex-direction: column;
+                    padding-top: 10px;
+                    margin: 10px;
+          }
+          
+          .account, .option {
+                    padding: 5px;
+          }
+}
+
+/* By Default, footer1 images are shown and footer2 images are hidden */
+.footer1 {
+          width: 100%;
+          display: block; /* Ensure that footer1 is displayed on the big screen */
+        }
+        
+        .footer2 {
+          display: none; /* Hide footer2 by default */
+          width: 100%;
+        }
+        
+        /* When the screen width is less than or equal to 1368px, only the footer1 image will still be displayed. */
+        @media (max-width: 1368px) {
+          .footer1 {
+            display: block; /* Make sure footer1 is displayed on the medium screen */
+          }
+          .footer2 {
+            display: none; /* Keep footer2 hidden at this screen size. */
+          }
+        }
+        
+        /* Hide footer1 and show footer2 when the screen mantle width is less than or equal to 390px. */
+        @media (max-width: 390px) {
+          .footer1 {
+            display: none; /* Hide footer1 on small screens */
+          }
+          .footer2 {
+            display: block; /* Display footer2 on a small screen */
+          }
+        }

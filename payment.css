@@ -19,17 +19,6 @@ header {
     margin-right: 10px;
 }
 
-footer {
-    margin: 0;
-    background-color: #392d6e;
-    color: #ffffff;
-    width: 100%;
-    text-align: left;
-    padding: 20px 0;
-    bottom: 0;
-    left: 0;
-}
-
 /* Container */
 .container {
     display: flex;
@@ -239,3 +228,34 @@ button {
         padding: 0;
     }
 }
+
+/* By Default, footer1 images are shown and footer2 images are hidden */
+.footer1 {
+    width: 100%;
+    display: block; /* Ensure that footer1 is displayed on the big screen */
+  }
+  
+  .footer2 {
+    display: none; /* Hide footer2 by default */
+    width: 100%;
+  }
+  
+  /* When the screen width is less than or equal to 1368px, only the footer1 image will still be displayed. */
+  @media (max-width: 1368px) {
+    .footer1 {
+      display: block; /* Make sure footer1 is displayed on the medium screen */
+    }
+    .footer2 {
+      display: none; /* Keep footer2 hidden at this screen size. */
+    }
+  }
+  
+  /* Hide footer1 and show footer2 when the screen mantle width is less than or equal to 390px. */
+  @media (max-width: 390px) {
+    .footer1 {
+      display: none; /* Hide footer1 on small screens */
+    }
+    .footer2 {
+      display: block; /* Display footer2 on a small screen */
+    }
+  }
