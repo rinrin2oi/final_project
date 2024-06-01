@@ -527,7 +527,6 @@ opacity: 1;
 }
 
 
-
 .quantity_edit {
     display: flex;
     align-items: center;
@@ -536,6 +535,7 @@ opacity: 1;
 }
 
 .quantity_frame {
+    margin-left: 80px;
     display: flex;
     align-items: center;
     background: #f9f9f9;
@@ -546,6 +546,7 @@ opacity: 1;
     height: 20px;
     gap: 5px; 
 }
+
 
 .minus_button, .plus_button {
     background-color: #e8e8e8;
@@ -565,7 +566,6 @@ opacity: 1;
     background-color: #008050;
     color: #ffffff;
 }
-
 
 @media (max-width: 390px) {
     .quantity_frame {
