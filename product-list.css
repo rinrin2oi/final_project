@@ -531,6 +531,14 @@ opacity: 1;
 
 
 
+.quantity_edit {
+    display: flex;
+    align-items: center;
+    margin
+    gap: 20px; 
+    justify-content: flex-end;
+}
+
 .quantity_frame {
     display: flex;
     align-items: center;
