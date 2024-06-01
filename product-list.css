@@ -530,8 +530,15 @@ opacity: 1;
 }
 
 
+
+.quantity_edit {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    justify-content: flex-end;
+}
+
 .quantity_frame {
-    margin-left: 80px;
     display: flex;
     align-items: center;
     background: #f9f9f9;
@@ -541,6 +548,25 @@ opacity: 1;
     width: 60px; 
     height: 20px;
     gap: 5px; 
+}
+
+.minus_button, .plus_button {
+    background-color: #e8e8e8;
+    color: #aeaeae;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 12.5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plus_button {
+    background-color: #008050;
+    color: #ffffff;
 }
 
 
