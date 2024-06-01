@@ -7,15 +7,42 @@
     <link rel="stylesheet" href="confirm.css">
 </head>
 <body>
-    <header>
-        <img src="img/atls.png" alt="atls_icon" class="header-img">
-    </header>
+    <!-- top bar -->
+    <nav class="navbar">
+        <div class="mobile-menu11">
+            <div class="menu-icon" onclick="togglePopup()">☰</div>
+            <div class="popup222" id="popup" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="product-list.html">All Recipes</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#login">Log In</a>
+            </div>
+        </div>
 
+        <a href="index.html">
+            <img class="atlaslogo" width="175" src="images/logo528.png" alt="logo528">
+        </a>
+        
+        <div class="menu">
+            <a href="#recipeboxes" onclick="toggleDropdownMenu()">ALL RECIPES</a>
+            <img src="images/arrow.png" alt="arrow" class="arrow">
+            <div class="dropdown-menu" id="mainDropdown">
+                <a href="product-list.html">All Recipes</a>
+                <a href="product-list-mexico.html">Mexico</a>
+                <a href="#">Greece</a>
+                <a href="#">Thailand</a>
+                <a href="#">China</a>
+                <a href="#">South America</a>
+            </div>
+            <a href="#howitworks">ABOUT US</a>
+        </div>  
+    </nav>
+    <!--Order confirmation number-->
     <div class="container">
         <div class="confirmation_number">
             <img src="img/order_confirm.png" alt="confirmation" class="confirm_img">
         </div>
-
+        <!--Details-->
         <div class="order_payment_details">
             <div class="order">
                 <h2 id="order_details">Order Details</h2>
@@ -53,12 +80,16 @@
             </div>
             <br>
             <br>
-            <button type="button" onclick="document.location='productpage.html'">Keep Shopping</button>
+            <button type="button" onclick="document.location='product-list.html'">Keep Shopping</button>
         </div>
     </div>
+    <br>
+    <br>
+    <!--Footer has two versions-->
     <footer>
         <img class="footer1" src="images/footer.png" alt="footer">
         <img class="footer2" src="img/shortfooter.png" alt="footer2">
     </footer>
+    <script src="confirm.js"></script>
 </body>
 </html>

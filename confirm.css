@@ -1,21 +1,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #392d6e;
-    color: #ffffff;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-}
-
-.header-img {
-    width: 150px;
-    height: 150px;
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 .container {
@@ -25,20 +15,20 @@ header {
     flex-direction: row;
     justify-content: center;
     padding: 15px;
-    gap: 30px;
+    gap: 80px;
 }
 
 .confirmation_number {
     width: 50%;
     text-align: center;
     padding: 20px;
-    margin-right: 100px;
 }
 
 .confirm_img {
     width: 75%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 100px;    
+    padding-right: 30px;
 }
 
 h2 {
@@ -46,7 +36,7 @@ h2 {
 }
 
 .order_payment_details {
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,10 +121,6 @@ button {
         width: 100%;
     }
 
-    .confirmation_number {
-        margin-right: 0;
-    }
-
     .confirm_img {
         width: 350px;
         margin-top: 10px;
@@ -163,13 +149,12 @@ button {
 }
 
 @media (max-width: 390px) {
-    .header-img {
-        width: 100px;
-        height: 100px;
+    .container {
+        gap: 35px;
     }
-
     .confirm_img {
         width: 350px;
+        padding-right: 30px;
     }
 
     .container {
@@ -198,34 +183,233 @@ button {
     }
 }
 
-
 /* By Default, footer1 images are shown and footer2 images are hidden */
 .footer1 {
     width: 100%;
-    display: block; /* Ensure that footer1 is displayed on the big screen */
-  }
-  
-  .footer2 {
-    display: none; /* Hide footer2 by default */
+    display: block;
+}
+
+.footer2 {
+    display: none;
     width: 100%;
-  }
-  
-  /* When the screen width is less than or equal to 1368px, only the footer1 image will still be displayed. */
-  @media (max-width: 1368px) {
+}
+
+@media (max-width: 1368px) {
     .footer1 {
-      display: block; /* Make sure footer1 is displayed on the medium screen */
+        display: block;
     }
+
     .footer2 {
-      display: none; /* Keep footer2 hidden at this screen size. */
+        display: none;
     }
-  }
-  
-  /* Hide footer1 and show footer2 when the screen mantle width is less than or equal to 390px. */
-  @media (max-width: 390px) {
+}
+
+@media (max-width: 390px) {
     .footer1 {
-      display: none; /* Hide footer1 on small screens */
+        display: none;
     }
+
     .footer2 {
-      display: block; /* Display footer2 on a small screen */
+        display: block;
     }
-  }
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #392d6e;
+    color: #ffffff;
+    height: 50px;
+    gap: 10px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+@media (max-width: 390px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .popup222 {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        color: #000000;
+        width: 150px;
+        border-radius: 20px;
+        z-index: 1000;
+        margin-top: 7px;
+        margin-left: -10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .popup222 a {
+        margin-left: 0;
+        padding: 10px 15px;
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        border-bottom: 1px solid #c0c0c0;
+        text-align: center;
+    }
+}
+
+.menu a,
+.actions a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.actions .signin {
+    margin-right: 10px;
+}
+
+.choose-recipes {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 150px;
+    border-radius: 20px;
+    z-index: 1000;
+    margin-top: 7px;
+    margin-left: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-menu a {
+    margin-left: 0;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.arrow {
+    width: 20px;
+    height: auto;
+}
+
+@media (max-width: 390px) {
+    .atlaslogo {
+        width: 175px;
+    }
+}
+
+.body-no-scroll {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: 180px;
+    max-width: 600px;
+    background-color: white;
+    color: black;
+    width: 460px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.pop-card {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+.pop-card img {
+    width: 40%;
+    height: auto;
+}
+
+.pop-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.pop-info h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pop-info button {
+    padding: 5px 5px;
+    background-color: #008050;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+@media (max-width: 390px) {
+    .popup {
+        margin-left: 0;
+        left: 60px;
+        width: 80%;
+        max-width: none;
+        padding: 5px;
+    }
+
+    .pop-card {
+        width: 90%;
+    }
+
+    .pop-card img {
+        width: 45%;
+    }
+
+    .pop-info {
+        text-align: center;
+    }
+}

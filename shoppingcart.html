@@ -7,9 +7,36 @@
     <link rel="stylesheet" href="shoppingcart.css">
 </head>
 <body>
-    <header>
-        <img src="img/atls.png" alt="atls_icon" class="header-img">
-    </header>
+    <!-- top bar -->
+    <nav class="navbar">
+        <div class="mobile-menu11">
+            <div class="menu-icon" onclick="togglePopup()">☰</div>
+            <div class="popup222" id="popup" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="product-list.html">All Recipes</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#login">Log In</a>
+            </div>
+        </div>
+
+        <a href="index.html">
+        <img class="atlaslogo" width="175" src="images/logo528.png" alt="logo528"></a>
+    
+        <div class="menu">
+            <a href="#recipeboxes" onclick="toggleDropdownMenu()">ALL RECIPES</a>
+            <img src="images/arrow.png" alt="arrow" class="arrow">
+            <div class="dropdown-menu" id="mainDropdown">
+                <a href="product-list.html">All Recipes</a>
+                <a href="product-list-mexico.html">Mexico</a>
+                <a href="#">Greece</a>
+                <a href="#">Thailand</a>
+                <a href="#">China</a>
+                <a href="#">South America</a>
+            </div>
+            <a href="#howitworks">ABOUT US</a>
+        </div>  
+    </nav>
+
     <div class="container">
         <div class="content-wrapper">
             <!--Left part of the page-->

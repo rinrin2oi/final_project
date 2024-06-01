@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Sign up</title>
-          <link rel="stylesheet" href="signup.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
+
 <body>
-          <header>
-              <img src="img/atls.png" alt="atls_icon" class="header-img">
-          </header>
+    <!-- top bar -->
+    <nav class="navbar">
+        <div class="mobile-menu11">
+            <div class="menu-icon" onclick="togglePopup()">☰</div>
+            <div class="popup222" id="popup" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="product-list.html">All Recipes</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#login">Log In</a>
+            </div>
+        </div>
 
-          <div class="container">
-                    <div class="signup-box">
-                              <!--Login Form-->
-                              <form action="index.html" method="GET">
-                                        <h2>SIGNUP</h2>
-                                        <div class="input-box">
-                                                  <input type="email" name="email" id="email" placeholder="&nbsp email address" required>
-                                        </div>
-                                        <div class="input-box">
-                                                  <input type="password" name="password" id="password" placeholder="&nbsp password" required>
-                                        </div>
-                                        <div class="hint">
-                                                  <div class="account">
-                                                            Forget password?
-                                                  </div>
-                                        </div>
-                                        <button type="signup" type="button" onclick="location.href='index.html'">
-                                                  Signup
-                                        </button>
-                                        <div class="hint">
-                                                  <div class="account">
-                                                            &nbsp Don't have an account? &nbsp
-                                                  </div>
-                                                  <div class="option">
-                                                            <a href="login.html" class="login" >Log in now</a>
-                                                  </div>
-                                        </div>
-                              </form>
+        <a href="index.html">
+            <img class="atlaslogo" width="175" src="images/logo528.png" alt="logo528">
+        </a>
+
+        <div class="menu">
+            <a href="#recipeboxes" onclick="toggleDropdownMenu()">ALL RECIPES</a>
+            <img src="images/arrow.png" alt="arrow" class="arrow">
+            <div class="dropdown-menu" id="mainDropdown">
+                <a href="product-list.html">All Recipes</a>
+                <a href="product-list-mexico.html">Mexico</a>
+                <a href="#">Greece</a>
+                <a href="#">Thailand</a>
+                <a href="#">China</a>
+                <a href="#">South America</a>
+            </div>
+            <a href="#howitworks">ABOUT US</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="signup-box">
+            <!--Login Form-->
+            <form action="index.html" method="GET">
+                <h2>SIGNUP</h2>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="&nbsp email address" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" placeholder="&nbsp password" required>
+                </div>
+                <div class="hint">
+                    <div class="account">
+                        Forget password?
                     </div>
-          </div>
+                </div>
+                <button type="signup" type="button" onclick="location.href='index.html'">
+                    Signup
+                </button>
+                <div class="hint">
+                    <div class="account">
+                        &nbsp Don't have an account? &nbsp
+                    </div>
+                    <div class="option">
+                        <a href="login.html" class="login">Log in now</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-          <footer>    
-                    <img class="footer1" src="img/longfooter.png" alt="footer">
-                    <img class="footer2" src="img/shortfooter.png" alt="footer2">
-          </footer>
+    <footer>
+        <img class="footer1" src="img/longfooter.png" alt="footer">
+        <img class="footer2" src="img/shortfooter.png" alt="footer2">
+    </footer>
+    <script src="signup.js"></script>
 </body>
+
 </html>
