@@ -2,18 +2,16 @@ html, body {
   margin: 0;
   margin-right: 0px;
   padding: 0;
-  
-  overflow-x: hidden;  /* 隐藏水平方向的溢出内容 */
+  overflow-x: hidden;  
 }
 
 .container {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;  /* 包括边框和内边距在内的宽度计算 */
+  box-sizing: border-box;  
 }
 
 
-/* 顶部导航栏的东西 */
 .topbar2 {
     border: 0 solid;
     margin: 0;
@@ -32,7 +30,7 @@ html, body {
     align-items: center;
   }
   
-  /* 顶部导航栏包含的东西 */
+
   .topbar3 {
     border: 0 solid;
     margin: 0;
@@ -40,21 +38,13 @@ html, body {
     margin-right: 12px;
   }
   
-  @media screen and (min-width: 640px) {
-    /* topbar3 - 640px */
+  @media screen and (min-width: 1368px) {
     .topbar3 {
       display: block;
     }
   }
+
   
-  @media screen and (min-width: 1280px) {
-    /* topbar3 - 1280px */
-    .topbar3 {
-      margin-right: 16px;
-    }
-  }
-  
-  /* 登陆的按钮 */
   .sign-in {
     display: inline-block;
     box-sizing: border-box;
@@ -62,7 +52,6 @@ html, body {
     border-style: solid;
     border-radius: 30px;
     text-align: center;
-    -webkit-text-decoration: none;
     text-decoration: none;
     -webkit-transition: background-color 0.2s linear;
     transition: background-color 0.2s linear;
@@ -71,11 +60,7 @@ html, body {
     border-color: #fff;
     color: #fff;
     padding: 2px 12px;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     font-weight: 500;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     text-transform: uppercase;
     font-size: 16px;
@@ -101,15 +86,10 @@ html, body {
     color: #b9b9b9;
   }
   
-  @media screen and (min-width: 1280px) {
-    /* sign-in - 1280px */
+  @media screen and (min-width: 1368px) {
     .sign-in {
       padding: 10px 16px;
-      font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
       font-weight: 500;
-      -webkit-letter-spacing: normal;
-      -moz-letter-spacing: normal;
-      -ms-letter-spacing: normal;
       letter-spacing: normal;
       text-transform: uppercase;
       font-size: 18px;
@@ -117,8 +97,6 @@ html, body {
     }
   }
 
-
-/* sign-up */
 .sign-up {
   display: inline-block;
   box-sizing: border-box;
@@ -135,11 +113,7 @@ html, body {
   border-color: #008050;
   color: #fff;
   padding: 2px 12px;
-  font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
   font-weight: 500;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
   letter-spacing: normal;
   text-transform: uppercase;
   font-size: 16px;
@@ -165,14 +139,10 @@ html, body {
   color: #fff;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1368px) {
   .sign-up {
     padding: 10px 16px;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     font-weight: 500;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     text-transform: uppercase;
     font-size: 18px;
@@ -180,36 +150,31 @@ html, body {
   }
 }
 
-/* sign-up2 */
 .sign-up2 {
   border: 0 solid;
   margin: 0;
   display: inline;
 }
 
-@media screen and (min-width: 640px) {
-  /* sign-up2 - 640px */
+@media screen and (min-width: 1368px) {
   .sign-up2 {
     display: none;
   }
 }
 
-/* Choose-recipes */
+
 .Choose-recipes {
   border: 0 solid;
   margin: 0;
   display: none;
 }
 
-@media screen and (min-width: 640px) {
-  /* Choose-recipes - 640px */
+@media screen and (min-width: 1368px) {
   .Choose-recipes {
     display: inline;
   }
 }
 
-
-/* 文字部分标题 */
 .title1 {
   border: 0 solid;
   margin: 0;
@@ -240,7 +205,7 @@ html, body {
     padding-right: 36px;
   }
   
-  @media screen and (min-width: 1536px) {
+  @media screen and (min-width: 1368px) {
     .title-words1 {
       padding-bottom: 36px;
     }
@@ -251,7 +216,6 @@ html, body {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 30px;
-    font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     font-weight: 400;
     letter-spacing: -0.3px;
     text-transform: none;
@@ -259,6 +223,17 @@ html, body {
     line-height: 36px;
   }
   
+  @media screen and (min-width: 1368px) {
+    .title-words2 {
+      font-family: system-ui;
+      font-weight: 400;
+      letter-spacing: -0.6px;
+      text-transform: none;
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+
   @media screen and (max-width: 390px) {
     .title-words2 {
       font-weight: 100;
@@ -269,35 +244,10 @@ html, body {
     }
   }
   
-  @media screen and (min-width: 1368px) {
-    .title-words2 {
-      font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-      font-weight: 400;
-      letter-spacing: -0.6px;
-      text-transform: none;
-      font-size: 32px;
-      line-height: 44px;
-    }
-  }
-  
-  @media screen and (min-width: 640px) {
-    /* title-words2 - 640px */
-    .title-words2 {
-      font-size: 34px;
-      -webkit-letter-spacing: -0.7px;
-      -moz-letter-spacing: -0.7px;
-      -ms-letter-spacing: -0.7px;
-      letter-spacing: -0.7px;
-      line-height: 48px;
-    }
-  }
-    
-/* 标题的文字部分！ */
 .title-words3 {
     border: 0 solid;
     margin: 0;
     color: inherit;
-    font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 26px;
@@ -307,7 +257,7 @@ html, body {
   
   @media screen and (max-width: 1368px) {
     .title-words3 {
-      font-family: Grenette, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      font-family: system-ui;
       font-weight: 400;
       letter-spacing: -0.6px;
       text-transform: none;
@@ -324,63 +274,31 @@ html, body {
     }
   }
   
-  /* 下面的一小句话 */
-  .words-uk {
-    border: 0 solid;
-    margin: 0;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-    font-weight: 300;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
-    letter-spacing: normal;
-    text-transform: none;
-    font-size: 16px;
-    line-height: 22px;
-  }
   
-  /* 菠萝元素 */
   .pineapple11 {
     border: 0 solid;
     margin-top: 20px;
     position: absolute;
-    -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
     transform: scale(0.6);
     z-index: 3;
     display: none;
     right: 20px;
-    -webkit-transform-origin: center right;
-    -ms-transform-origin: center right;
     transform-origin: center right;
     pointer-events: none;
     width: 93px;
     height: 108px;
   }
   
-  @media screen and (min-width: 640px) {
-    /* pineapple11 - 640px */
+  @media screen and (min-width: 1368px) {
     .pineapple11 {
-      -webkit-transform: scale(0.7);
-      -ms-transform: scale(0.7);
-      transform: scale(0.7);
+      transform: scale(1);
       display: block;
+      margin-right: 60px;
       top: -16px;
     }
   }
   
-  @media screen and (min-width: 1024px) {
-    /* pineapple11 - 1024px */
-    .pineapple11 {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      right: 50px;
-      top: 0px;
-    }
-  }
 
-/* idk what is this */
 .idk1 {
     border: 0 solid;
     margin: 0;
@@ -398,8 +316,7 @@ html, body {
     z-index: 1;
   }
   
-  @media screen and (min-width: 640px) {
-    /* idk2 - 640px */
+  @media screen and (min-width: 1368px) {
     .idk2 {
       height: 50%;
     }
@@ -416,8 +333,7 @@ html, body {
     z-index: 2;
   }
   
-  @media screen and (min-width: 640px) {
-    /* idk3 - 640px */
+  @media screen and (min-width: 1368px) {
     .idk3 {
       height: 50%;
     }
@@ -432,12 +348,9 @@ html, body {
     position: absolute;
   }
   
-  @media screen and (min-width: 640px) {
-    /* idk4 - 640px */
+  @media screen and (min-width: 1368px) {
     .idk4 {
       top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
   }
@@ -448,8 +361,7 @@ html, body {
     color: #fcf9ed;
     display: block;
   }
-  
-  /* 中间的照片们 */
+
   .imgleft-1{
     border: 0 solid;
     margin: 0;
@@ -464,52 +376,24 @@ html, body {
   .imgleft-2 {
     border: 0 solid;
     margin: 0;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 0px;
     margin: 0 auto;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     position: relative;
     min-height: 230px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
   }
   
-  @media screen and (min-width: 640px) {
-    /*  imgleft-2 - 640px */
+  @media screen and (min-width: 1368px) {
     .imgleft-2 {
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
       padding-bottom: 40px;
       min-height: 285px;
-    }
-  }
-  
-  @media screen and (min-width: 1024px) {
-    /*  imgleft-2 - 1024px */
-    .imgleft-2 {
-      min-height: 285px;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    /* imgleft-2 - 1280px */
-    .imgleft-2 {
-      min-height: 365px;
     }
   }
 
@@ -522,50 +406,25 @@ html, body {
     margin-left: 0px;
     margin-top: 0px;
     z-index: 2;
-    -webkit-transition: -webkit-transform ease-in-out 0.1s;
-    -webkit-transition: transform ease-in-out 0.1s;
     transition: transform ease-in-out 0.1s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   
-  @media screen and (min-width: 640px) {
-    /* imgleft-3  - 640px */
-    .imgleft-3  {
-      max-width: 285px;
-    }
-  }
-  
-  @media screen and (min-width: 1024px) {
-    /* imgleft-3  - 1024px */
-    .imgleft-3  {
-      max-width: 285px;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    /* imgleft-3  - 1280px */
+  @media screen and (min-width: 1368px) {
     .imgleft-3  {
       max-width: 365px;
     }
   }
   
+ 
+  
   .imgleft-3 :hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
   }
   
-  /* imgleft-1p */
+
   .imgleft-1p {
     border: 0 solid;
     margin: 0;
@@ -574,24 +433,18 @@ html, body {
     bottom: unset;
     top: 10%;
     left: -10px;
-    -webkit-transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
     transform: rotate(25deg);
   }
   
-  @media screen and (min-width: 640px) {
-    /* imgleft-1p - 640px */
+  @media screen and (min-width: 1368px) {
     .imgleft-1p {
       bottom: -30px;
       top: unset;
       left: 50%;
-      -webkit-transform: translateX(-50%) rotate(0deg);
-      -ms-transform: translateX(-50%) rotate(0deg);
       transform: translateX(-50%) rotate(0deg);
     }
   }
-  
-  /* Crispy-- imgmiddle-1 */
+
   .imgmiddle-1 {
     border: 0 solid;
     margin: 0;
@@ -600,49 +453,22 @@ html, body {
     position: relative;
     margin-top: -100px;
     z-index: 3;
-    -webkit-transition: -webkit-transform ease-in-out 0.1s;
-    -webkit-transition: transform ease-in-out 0.1s;
     transition: transform ease-in-out 0.1s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   
   @media screen and (min-width: 640px) {
-    /* imgmiddle-1 - 640px */
     .imgmiddle-1 {
-      max-width: 285px;
+      max-width: 365px;
       margin-left: -100px;
       margin-top: 0px;
     }
   }
-  
-  @media screen and (min-width: 1024px) {
-    /* imgmiddle-1 - 1024px */
-    .imgmiddle-1 {
-      max-width: 285px;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    /* imgmiddle-1 - 1280px */
-    .imgmiddle-1 {
-      max-width: 365px;
-      margin-left: -150px;
-    }
-  }
+
   
   .imgmiddle-1:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
   }
   
@@ -654,24 +480,18 @@ html, body {
     bottom: unset;
     top: 20%;
     left: -15px;
-    -webkit-transform: rotate(18deg);
-    -ms-transform: rotate(18deg);
     transform: rotate(18deg);
   }
   
-  @media screen and (min-width: 640px) {
-    /* imgmiddle-2p - 640px */
+  @media screen and (min-width: 1368px) {
     .imgmiddle-2p {
       bottom: -30px;
       top: unset;
       left: 50%;
-      -webkit-transform: translateX(-50%) rotate(0deg);
-      -ms-transform: translateX(-50%) rotate(0deg);
       transform: translateX(-50%) rotate(0deg);
     }
   }
-  
-  /* image top right */
+
   .imgright {
     border: 0 solid;
     margin: 0;
@@ -680,53 +500,25 @@ html, body {
     position: relative;
     margin-top: -100px;
     z-index: 4;
-    -webkit-transition: -webkit-transform ease-in-out 0.1s;
-    -webkit-transition: transform ease-in-out 0.1s;
     transition: transform ease-in-out 0.1s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   
-  @media screen and (min-width: 640px) {
-    /* imgright - 640px */
+  @media screen and (min-width: 1368px) {
     .imgright {
-      max-width: 285px;
+      max-width: 365px;
       margin-left: -100px;
       margin-top: 0px;
     }
   }
   
-  @media screen and (min-width: 1024px) {
-    /* imgright - 1024px */
-    .imgright {
-      max-width: 285px;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    /* imgright - 1280px */
-    .imgright {
-      max-width: 365px;
-      margin-left: -150px;
-    }
-  }
-  
   .imgright:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
   }
 
-  /* imgright-4p */
+
 .imgright-4p {
     border: 0 solid;
     margin: 0;
@@ -735,24 +527,19 @@ html, body {
     bottom: unset;
     left: -15px;
     top: 16%;
-    -webkit-transform: rotate(8deg);
-    -ms-transform: rotate(8deg);
     transform: rotate(8deg);
   }
   
-  @media screen and (min-width: 640px) {
-    /* imgright-4p - 640px */
+  @media screen and (min-width: 1368px) {
     .imgright-4p {
       bottom: -30px;
       left: 50%;
       top: unset;
-      -webkit-transform: translateX(-50%) rotate(0deg);
-      -ms-transform: translateX(-50%) rotate(0deg);
       transform: translateX(-50%) rotate(0deg);
     }
   }
   
-  /* part of img (不确定 */
+
   .imgpart {
     border: 0 solid;
     margin: 0;
@@ -764,8 +551,7 @@ html, body {
     z-index: 3;
   }
   
-  @media screen and (min-width: 640px) {
-    /* imgpart - 640px */
+  @media screen and (min-width: 1368px) {
     .imgpart {
       bottom: 95%;
       left: 85%;
@@ -773,13 +559,6 @@ html, body {
     }
   }
   
-  @media screen and (min-width: 1024px) {
-    /* imgpart - 1024px */
-    .imgpart {
-      bottom: 90%;
-      left: 90%;
-    }
-  }
   
   /* all elements- homepage */
   .element-vege1 {
@@ -796,28 +575,10 @@ html, body {
     height: 262px;
   }
   
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 1368px) {
     .element-vege1  {
-      -webkit-transform: scale(0.7);
-      -ms-transform: scale(0.7);
       transform: scale(0.7);
       display: block;
-      top: -36px;
-    }
-  }
-  
-  @media screen and (min-width: 1024px) {
-    /* element-vege1  - 1024px */
-    .element-vege1  {
-      -webkit-transform: scale(.8);
-      -ms-transform: scale(.8);
-      transform: scale(.8);
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    /* element-vege1  - 1280px */
-    .element-vege1  {
       top: -8px;
     }
   }
@@ -827,25 +588,18 @@ html, body {
     border: 0 solid;
     margin: 0;
     color: inherit;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    font-family: system-ui;
     font-weight: 500;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     text-transform: none;
     font-size: 18px;
     line-height: 24px;
   }
   
-  @media screen and (min-width: 640px) {
-    /* homepage-b8-words - 640px */
+  @media screen and (min-width: 1368px) {
     .homepage-b8-words {
-      font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      font-family: system-ui;
       font-weight: 500;
-      -webkit-letter-spacing: normal;
-      -moz-letter-spacing: normal;
-      -ms-letter-spacing: normal;
       letter-spacing: normal;
       text-transform: none;
       font-size: 20px;
@@ -866,20 +620,15 @@ html, body {
     border-style: solid;
     border-radius: 30px;
     text-align: center;
-    -webkit-text-decoration: none;
     text-decoration: none;
-    -webkit-transition: background-color 0.2s linear;
     transition: background-color 0.2s linear;
     cursor: pointer;
     background: #008050;
     border-color: #008050;
     color: #fff;
     padding: 10px 16px;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    font-family:system-ui;
     font-weight: 500;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     text-transform: uppercase;
     font-size: 18px;
@@ -910,18 +659,14 @@ html, body {
     border: 0 solid;
     margin: 0;
     margin-top: 8px;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    font-family:system-ui;
     font-weight: 300;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     text-transform: none;
     font-size: 16px;
     line-height: 22px;
   }
   
-  /* idk */
   .idk6 {
     border: 0 solid;
     margin: 0;
@@ -986,8 +731,6 @@ html, body {
     }
   }
 
-
-  /* homepage-bottom1 */
 .homepage-bottom1 {
     border: 0 solid;
     margin: 0;
@@ -1047,11 +790,8 @@ html, body {
   .homepage-b6 {
     border: 0 solid;
     margin: 0;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    font-family:system-ui;
     font-weight: 500;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     text-transform: none;
     font-size: 18px;
@@ -1069,25 +809,21 @@ html, body {
     border: 0 solid;
     margin: 0;
     color: #68a25b;
-    font-family: Moderat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    font-family: system-ui;
     font-weight: 500;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     text-transform: none;
     font-size: 20px;
     line-height: 28px;
   }
   
-  @media screen and (min-width:640px) {
+  @media screen and (min-width:1368px) {
     .homepage-b7-words {
       font-size: 22px;
       line-height: 32px;
     }
   }
 
-/* element!! */
 .element-pineapple3 {
     border: 0 solid;
     margin-left: 90px;
@@ -1100,10 +836,8 @@ html, body {
     height: 154px;
   }
   
-  @media screen and (min-width:1024px) {
+  @media screen and (min-width:1368px) {
     .element-pineapple3 {
-      -webkit-transform: scale(.8) rotate(24deg);
-      -ms-transform: scale(.8) rotate(24deg);
       transform: scale(.8) rotate(24deg);
       display: block;
       left: -12px;
@@ -1111,11 +845,6 @@ html, body {
     }
   }
   
-  @media screen and (min-width:1280px) {
-    .element-pineapple3 {
-      top: 92px;
-    }
-  }
   
   .element-vege2 {
     border: 0 solid;
@@ -1183,19 +912,19 @@ html, body {
 
 
   .homepage-part2-words {
-        color: #392D60; /* 深紫色 */
-        font-family: '24px Grenette, system-ui'; /* 字体及备选字体 */
-        font-size: 24px; /* 字体大小 */
-        font-weight: bold; /* 字体加粗 */
-        line-height: 1.2; /* 行高 */
+        color: #392D60; 
+        font-family: system-ui; 
+        font-size: 24px; 
+        font-weight: bold; 
+        line-height: 1.2; 
         margin-top: 50px;
-        padding: 0px 36px; /* 内边距 */
+        padding: 0px 36px; 
         text-align: center;
     }
 
     @media screen and (max-width:390px) {
       .homepage-part2-words  {
-        font-size: 18px; /* 字体大小 */
+        font-size: 16px; 
       }
   }
   
@@ -1206,8 +935,14 @@ html, body {
 }
 
 .homepage-part2-image1 {
-    width: 100%; /* 让图片在容器内自动调整大小 */
-    height: auto; /* 保持图片的宽高比 */
+    width: 100%; 
+    height: auto; 
+}
+
+@media screen and (max-width: 1368px) {
+  .homepage-part2-image1 {
+      width: 50%;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -1215,12 +950,6 @@ html, body {
         width: 100%;
         margin-top: 20px;
     }
-}
-
-@media screen and (max-width: 1368px) {
-  .homepage-part2-image1 {
-      width: 50%;
-  }
 }
 
     .navbar {
@@ -1237,7 +966,7 @@ html, body {
       }
 
     .menu-icon {
-      display: none; /* Initially hidden on larger screens */
+      display: none; 
       font-size: 30px;
       cursor: pointer;
       color: white;
@@ -1245,34 +974,34 @@ html, body {
   
   @media (max-width: 390px) {
       .menu {
-          display: none; /* Hide other menu options on small screens */
+          display: none;
       }
   
       .menu-icon {
-          display: block; /* Show the hamburger menu icon on small screens */
+          display: block; 
       }
   
       .popup222 {
-          display: none; /* 默认不显示，点击后显示 */
+          display: none; 
           position: absolute;
           background-color: white;
           color: black;
           width: 150px;
           border-radius: 20px;
           z-index: 1000;
-          margin-top: 7px; /* 位置调整为紧贴链接下方 */
-          margin-left: -10px; /* 让下拉菜单左对齐父链接 */
+          margin-top: 7px; 
+          margin-left: -10px; 
           box-shadow: 0 4px 8px rgba(0,0,0,0.8);  
       }
 
       .popup222 a{
         margin-left: 0%;
-    padding: 10px 15px;
-    display: block; /* 让链接填充整个容器宽度 */
-    text-decoration: none;
-    color: black; /* 文本颜色 */
-    border-bottom: 1px solid #ccc;
-    text-align: center; /* 居中所有文本 */
+        padding: 10px 15px;
+        display: block;
+        text-decoration: none;
+        color: black; 
+        border-bottom: 1px solid #ccc;
+        text-align: center; 
       }
   }
     
@@ -1282,7 +1011,7 @@ html, body {
         text-decoration: none;
         margin-left: 30px;
         font-size: 1.2em;
-        position: relative; /* Needed for tooltip positioning */
+        position: relative;
     }
     
     .actions .signin {
@@ -1297,15 +1026,15 @@ html, body {
     }
     
     .dropdown-menu {
-      display: none; /* 默认不显示，点击后显示 */
+      display: none; 
       position: absolute;
       background-color: white;
       color: black;
       width: 150px;
       border-radius: 20px;
       z-index: 1000;
-      margin-top: 7px; /* 位置调整为紧贴链接下方 */
-      margin-left: 15px; /* 让下拉菜单左对齐父链接 */
+      margin-top: 7px; 
+      margin-left: 15px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.8);
       
   }
@@ -1313,15 +1042,15 @@ html, body {
   .dropdown-menu a {
     margin-left: 0%;
     padding: 10px 15px;
-    display: block; /* 让链接填充整个容器宽度 */
+    display: block;
     text-decoration: none;
-    color: black; /* 文本颜色 */
+    color: black; 
     border-bottom: 1px solid #ccc;
-    text-align: center; /* 居中所有文本 */
+    text-align: center; 
   }
   
   .dropdown-menu a:hover {
-      background-color: #f1f1f1; /* 鼠标悬停时的背景色 */
+      background-color: #f1f1f1; 
   }
   
   .arrow{
@@ -1332,99 +1061,14 @@ html, body {
   
 
 .category {
-    display: block; /* Makes each category appear on a new line */
-    padding: 5px 0; /* Adds some vertical padding */
+    display: block; 
+    padding: 5px 0; 
 }
 
 .menu a:hover .tooltip {
     visibility: visible;
     opacity: 1;
 }
-
-/* cards!! */
-.cards-container {
-    display: flex; /* 设置 Flexbox */
-    flex-wrap: wrap; /* 允许元素换行 */
-    gap: 8px; /* 设置元素间距 */
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 20px; /* 容器内边距 */
-    justify-content: space-around; /* 在项目之间平均分配剩余空间 */
-}
-
-.card {
-    flex: 1 1 200px; /* 每个卡片至少200px宽，但可以增长 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    margin: 5px; /* 增加卡片间隔 */
-    overflow: hidden;
-    font-family: 'Arial', sans-serif;
-    transition: transform 0.3s ease;
-    margin-bottom: 70px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.info {
-    padding: 18px;
-    text-align: left;
-}
-
-.info h3 {
-    margin-top: 0;
-    color: #392d6e;
-    font-size: 1.4rem;
-}
-
-.info p {
-    color: #392d6e;
-    font-size: 1.2rem;
-    padding-bottom: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    color: white;
-    background-color: #008050;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #a6d2c1;
-}
-
-/* 媒体查询部分 */
-@media (max-width: 768px) {
-    .cards-container {
-        justify-content: space-around; /* 确保在小屏幕上两列均匀分布 */
-    }
-    .card {
-        flex: 1 1 46%; /* 在较小屏幕上使每个卡片占据近一半宽度 */
-    }
-}
-
-@media (min-width: 769px) {
-    .cards-container {
-        justify-content: space-between; /* 确保在较大屏幕上四个卡片均匀分布 */
-    }
-    .card {
-        flex: 1 1 22%; /* 在较大屏幕上使每个卡片占据四分之一宽度 */
-    }
-}
-
 
 .responsive-img {
     width: 100%;
@@ -1462,10 +1106,6 @@ button:hover {
   }
 }
 
-
-
-
-
 @media screen and (max-width: 390px) {
     .imgleft-3,
     .imgmiddle-1,
@@ -1483,14 +1123,13 @@ button:hover {
     }
 }
 
-/* 啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊吗*/
 
 .filter-item {
   display: flex;
   align-items: center;
   color: #fff;
   font-size: 16px;
-  cursor: pointer; /* 提示用户可以点击 */
+  cursor: pointer; 
 }
 
 .filter-item i.fa {
@@ -1508,7 +1147,7 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.8);
   margin-top: 10px;
   padding: 5px 0;
-  width: 150px; /* 根据需要调整 */
+  width: 150px; 
   z-index: 1000;
   border-radius: 20px;
 }
@@ -1519,7 +1158,7 @@ button:hover {
   text-decoration: none;
   color: black;
   border-bottom: 1px solid #ccc;
-  text-align: center; /* 居中所有文本 */
+  text-align: center; 
 }
 
 .dropdown-menu11 a:last-child {
@@ -1538,20 +1177,20 @@ button:hover {
 
 
 .cards-container {
-  display: flex; /* 设置 Flexbox */
-  flex-wrap: wrap; /* 允许元素换行 */
-  gap: 8px; /* 设置元素间距 */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 8px; 
   margin-top: 30px;
   margin-left: 100px;
   margin-right: 100px;
-  padding: 20px; /* 容器内边距 */
+  padding: 20px; 
 }
 
 .card {
-  flex: 1 1 200px; /* 每个卡片至少200px宽，但可以增长 */
+  flex: 1 1 200px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
-  margin: 5px; /* 增加卡片间隔 */
+  margin: 5px; 
   overflow: hidden;
   font-family: 'Arial', sans-serif;
   transition: transform 0.3s ease;
@@ -1559,8 +1198,17 @@ button:hover {
   width: 100%;
 }
 
-.card:hover {
-  transform: scale(1.05);
+
+.card1 {
+  flex: 1 1 200px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin: 5px; 
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease;
+  margin-bottom: 70px;
+  width: 100%;
 }
 
 .card img {
@@ -1605,54 +1253,70 @@ button:hover {
   background-color: #a6d2c1;
 }
 
-/* 媒体查询部分 */
-@media (max-width: 768px) {
+
+@media (max-width: 390px) {
   .cards-container {
       margin: 0%;
-      justify-content: space-around; /* 确保在小屏幕上两列均匀分布 */
+      justify-content: space-around;
   }
   .card {
       margin-bottom: 20px;
-      flex: 1 1 40%; /* 在较小屏幕上使每个卡片占据近一半宽度 */
+      flex: 1 1 40%;
   }
 }
 
-@media (min-width: 844px) {
+@media (min-width: 1368px) {
   .cards-container {
-      justify-content: space-between; /* 确保在较大屏幕上四个卡片均匀分布 */
+      justify-content: space-between; 
   }
   .card {
-      flex: 1 1 22%; /* 在较大屏幕上使每个卡片占据四分之一宽度 */
+      flex: 1 1 22%; 
   }
 }
 
-/* 默认情况下，显示 footer1 图片，并隐藏 footer2 图片 */
 .footer1 {
   width: 100%;
-  display: block; /* 确保 footer1 在大屏幕上显示 */
+  display: block; 
 }
 
 .footer2 {
-  display: none; /* 默认隐藏 footer2 */
+  display: none;
   width: 100%;
 }
 
-/* 当屏幕宽度小于等于 1368px 时，仍然只显示 footer1 图片 */
 @media (max-width: 1368px) {
   .footer1 {
-    display: block; /* 确保 footer1 在中等屏幕上显示 */
+    display: block; 
   }
   .footer2 {
-    display: none; /* 保持 footer2 在这个屏幕尺寸下隐藏 */
+    display: none; 
   }
 }
 
-/* 当屏幔宽度小于等于 390px 时，隐藏 footer1 并显示 footer2 */
 @media (max-width: 390px) {
   .footer1 {
-    display: none; /* 在小屏幕上隐藏 footer1 */
+    display: none; 
   }
   .footer2 {
-    display: block; /* 在小屏幕上显示 footer2 */
+    display: block; 
   }
 }
+
+
+.highlight-text {
+  font-size: 1.5rem;
+  font-weight: bold; 
+  text-align: center;
+  margin-top: 50px;
+}
+
+.highlight-text .highlight1 {
+  color: #392d6e; 
+}
+
+.highlight-text .highlight2 {
+  color: #6eac5d; 
+}
+
+.quantity_frame, .add-to-cart {
+  pointer-events: none;}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="homepage1.css">
+    <link rel="stylesheet" href="index.css">
    
 </head>
 <body>
@@ -13,21 +13,21 @@
         <div class="mobile-menu11">
             <div class="menu-icon" onclick="togglePopup()">☰</div>
             <div class="popup222" id="popup" style="display: none;">
-                <a href="#home">Home</a>
-                <a href="#allrecipes">All Recipes</a>
+                <a href="index.html">Home</a>
+                <a href="product-list.html">All Recipes</a>
                 <a href="#aboutus">About Us</a>
                 <a href="#login">Log In</a>
             </div>
         </div>
 
-          <img width="175" src="images/logo528.png" alt="logo528">
+        <a href="index.html">
+          <img width="175" src="images/logo528.png" alt="logo528"></a>
         <div class="menu">
             <a href="#recipeboxes">ALL RECIPES</a>
-            <!-- arrow 但是还没有link上！ -->
             <img src="images/arrow.png" alt="arrow" class="arrow">
             <div class="dropdown-menu">
-                <a href="#">All Recipes</a>
-                <a href="#">Mexico</a>
+                <a href="product-list.html">All Recipes</a>
+                <a href="product-list-mexico.html">Mexico</a>
                 <a href="#">Greece</a>
                 <a href="#">Thailand</a>
                 <a href="#">China</a>
@@ -64,19 +64,21 @@
             <img alt="" loading="auto" width="93" height="108" src="images/pineapple2.png" alt="Pineapple">
 </picture></div></div></div>
 
-<!-- 没懂这里 但是不能删 -->
+<!-- section1: main -->
 <div class="idk1">
     <div class="idk2"></div>
     <div class="idk3"></div>
+    <!-- Curve background path -->
     <div class="idk4">
         <svg fill="none" viewBox="0 0 2390 149" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" class="idk5">
             <path fill="currentColor" d="M0 0a4486.772 4486.772 0 0 0 752.756 42.064L1195 29.548l675.13-22.036c173.6-5.667 347.37 1.7 519.87 22.036V148.5H0V0Z"></path>
         </svg></div>
 
-        <div class="mgleft-1">
-            <div class="imgleft-2">
-                <div class="imgleft-3 ">
-                        <img class="responsive-img" loading="eager" width="360" src="images/salmon.avif" alt="salmon">
+<!-- Food photo on the screen 1 -->
+<div class="mgleft-1">
+    <div class="imgleft-2">
+        <div class="imgleft-3 ">
+            <img class="responsive-img" loading="eager" width="360" src="images/salmon.avif" alt="salmon">
 
 <div class="imgleft-1p">
     <picture>
@@ -84,7 +86,7 @@
         <img class="responsive1person" alt="1 person" loading="eager" width="24" src="images/1person-mobile.avif">
 </picture></div></div>
 
-
+<!-- Food photo on the screen 2 -->
 <div class="imgmiddle-1">
     <img class="responsive-img" alt="Crispy chicken katsu curry" loading="eager" width="360" src="images/crispy.avif" 
         srcset="images/crispy.avif">
@@ -94,6 +96,7 @@
         <img class="responsive2person" alt="2 person" loading="eager" width="20" src="images/2person-mobile-1.png">
     </picture></div></div>
 
+<!-- Food photo on the screen 3 -->
 <div class="imgright">
     <img  class="responsive-img" loading="eager" width="360" src="images/tiger.avif">
 
@@ -106,7 +109,7 @@
 </svg></div></div></div>
 
 
-
+<!-- Food element decoration -->
 <div class="element-vege1"><picture><img alt="" loading="auto" width="226" height="262" src="images/vege.png"></picture></div>
 
 <div class="element-pineapple3"><picture><img alt="" loading="auto" width="133" height="154" src="images/pineapple3.png"></picture></div>
@@ -127,12 +130,14 @@
             <span data-testid="text-no-emphasis" class="homepage-b8-words">
                 <br>skip or pause at anytime </span></p>
                 <div class="homepage-b9">
-                    <a href="/choose-recipes" class="homepage-b9-words">Choose your recipes</a>
+                   
+                    <a href="product-list.html" class="homepage-b9-words">Choose your recipes</a>
                     <p class="homepage-b10-ad ">Get 25% off your 1st + 2nd box</p>
                 </div>
             </div>
         </div></div>
-                    
+
+ <!-- Curve background path -->           
 <div class="idk6">
     <svg viewBox="0 0 2390 165" fill="none" preserveAspectRatio="none" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" class="idk7">
         <path fill="currentColor" d="M0 0h2390v126c-205 29-412 42-618 37L0 126V0Z"></path></svg></div>
@@ -150,11 +155,16 @@
 
 </section>
 
+<!-- section 2-->
 <h1 class="homepage-part2-words">Over 30 million meals delivered to more than 400,000 happy customers</h1>
 
 <div class="homepage-part2-image"><img class="homepage-part2-image1" width="600" src="https://www.atlasweekly.com.au/cdn/shop/files/Atlas_rebrand_lr_122.jpg?v=1679379147&width=1280" alt="Person Eating"></div>
 
 
+<!-- section 3 -->
+<div class="highlight-text">
+    <span class="highlight1">There's</span> <span class="highlight2">something for everyone</span>
+</div>
 
 <div class="cards-container">
     <div class="card">
@@ -174,7 +184,29 @@
             <button>Add to Cart</button>
         </div>
     </div>
+
+
+<div class="card">
+    <img src="images/Chicken-Apple-Pan-Sauce.jpeg" alt="Chicken-Apple-Pan-Sauce">
+    <div class="info">
+        <h3>Chicken & Apple Sauce</h3>
+        <p>$15.00</p>
+        <button>Add to Cart</button>
+    </div>
 </div>
+
+
+<div class="card">
+    <img src="images/Glazed Pork Belly & Ramen Noodles.jpeg" alt="Glazed Pork Belly & Ramen Noodles">
+    <div class="info">
+        <h3>Glazed Pork Ramen</h3>
+        <p>$15.00</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
 
 <img class="footer1" src="images/footer.png" alt="footer">
 <img class="footer2" src="images/mobilefooter.png" alt="footer2">
@@ -182,27 +214,7 @@
 
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var link = document.querySelector('a[href="#recipeboxes"]');
-        var dropdown = document.querySelector('.dropdown-menu');
-    
-        // 监听链接点击，切换下拉菜单的显示状态
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // 阻止链接默认的跳转行为
-            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-        });
-    
-        // 点击除链接外的其他地方隐藏下拉菜单
-        document.addEventListener('click', function(event) {
-            if (!link.contains(event.target) && !dropdown.contains(event.target)) {
-                dropdown.style.display = 'none';
-            }
-        });
-    });
-    </script>
-
-<script src="第二次.js"></script>
+<script src="index.js"></script>
 
 
 </body>
