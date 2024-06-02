@@ -154,6 +154,24 @@ element.style {
   margin-bottom: 14px;
 }
 
+
+@media (max-width: 390px) {
+
+  .ba-recipe-title__main {
+    font-size: 28px;
+    font-weight: 500;
+    color: #002c9b;
+    margin-bottom: 12px;
+    margin-top: 0px;
+  }
+
+  .ba-recipe-title__sub {
+    font-size: 15px;
+    font-weight: 300;
+    color: #6a6d75;
+  }
+}
+
 .section-recipe .ba-recipe--details {
   display: flex;
   align-items: center;
@@ -454,13 +472,13 @@ img {
   
 .servings1 {
   font-size: 14px;
-  margin-top: -20px;
-  margin-left: 190px;
+  margin-top: -19px;
+  margin-left: 200px;
 }
 
 .ba-recipe-subtitle__cook-time {
   margin-left: -30px;
-  margin-top: -260px;
+  margin-top: -190px;
 
 }
 }
@@ -564,13 +582,15 @@ button:hover {
   }
 
   .price {
-    margin-top: 65px; 
+    margin-top: 85px; 
     margin-bottom: 150px;
     border-bottom: 50px;
   }
 
   .add-to-cart{
-    margin-top: -130px; 
+    margin-left: 20px;
+    width:140px;
+    margin-top: -145px; 
   }
 
   .button-primary {
@@ -683,6 +703,8 @@ button:hover {
 
   .description, .step-header {
     text-align: center;
+    padding: 0px;
+    margin-left: 20px;
   }
 }
 
