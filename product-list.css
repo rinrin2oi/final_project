@@ -105,6 +105,7 @@ button:hover {
 }
 
 .logo img {
+    gap:10px;
     width:50px;
 }
 
@@ -529,6 +530,7 @@ opacity: 1;
     }
 }
 
+
 .quantity_edit {
     display: flex;
     align-items: center;
@@ -568,6 +570,7 @@ opacity: 1;
     background-color: #008050;
     color: #ffffff;
 }
+
 
 @media (max-width: 390px) {
     .quantity_frame {

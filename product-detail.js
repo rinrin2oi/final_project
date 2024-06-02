@@ -1,14 +1,102 @@
-//mobile version
 function togglePopup() {
     var popup = document.getElementById('popup');
     if (popup.style.display === 'block') {
-        popup.style.display = 'none'; 
+        popup.style.display = 'none';
     } else {
         popup.style.display = 'block'; 
     }
 }
 
-//top bar
+//add to cart bottom & counting
+document.addEventListener('DOMContentLoaded', function() {
+    var addToCartButtons = document.querySelectorAll('.add-to-cart');
+    var cartCounter = document.getElementById('cart-counter'); 
+    var totalCartItems = 0; 
+
+   
+    function stopPropagation(event) {
+        event.stopPropagation();
+    }
+
+
+    addToCartButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            event.preventDefault();
+            event.stopPropagation(); 
+
+            var card = this.closest('.card');
+            var quantityFrame = card.querySelector('.quantity_frame');
+
+           
+            quantityFrame.style.display = 'flex';
+            this.style.display = 'none';
+
+            var minusButton = quantityFrame.querySelector('.minus_button');
+            var plusButton = quantityFrame.querySelector('.plus_button');
+            var quantitySpan = quantityFrame.querySelector('.quantity');
+
+            minusButton.addEventListener('click', function() {
+                event.preventDefault(); 
+                event.stopPropagation(); 
+                var quantity = parseInt(quantitySpan.textContent);
+                if (quantity > 1) {
+                    quantitySpan.textContent = quantity - 1;
+                    totalCartItems--; 
+                } else {
+                   
+                    quantityFrame.style.display = 'none';
+                    button.style.display = 'block';
+                    totalCartItems--; 
+                }
+                updateCartCounter(); 
+            });
+
+            plusButton.addEventListener('click', function() {
+                event.preventDefault(); 
+                event.stopPropagation(); 
+                var quantity = parseInt(quantitySpan.textContent);
+                quantitySpan.textContent = quantity + 1;
+                totalCartItems++; 
+                updateCartCounter(); 
+            });
+
+            totalCartItems++; 
+            updateCartCounter();
+        });
+    });
+
+
+    function updateCartCounter() { 
+        if (totalCartItems > 0) {
+            cartCounter.style.display = 'flex';
+            cartCounter.textContent = totalCartItems;
+        } else {
+            cartCounter.style.display = 'none';
+        }
+    }
+});
+
+
+//filter bar1
+document.addEventListener('DOMContentLoaded', function() {
+    var nextArrow = document.getElementById('next-arrow');
+    var prevArrow = document.getElementById('prev-arrow');
+    var filterGroup1 = document.getElementById('filter-group-1');
+    var filterGroup2 = document.getElementById('filter-group-2');
+
+    nextArrow.addEventListener('click', function() {
+        filterGroup1.style.display = 'none';
+        filterGroup2.style.display = 'flex';
+    });
+
+    prevArrow.addEventListener('click', function() {
+        filterGroup1.style.display = 'flex';
+        filterGroup2.style.display = 'none';
+    });
+});
+
+
+//top
 document.addEventListener('DOMContentLoaded', function() {
         var link = document.querySelector('a[href="#recipeboxes"]');
         var dropdown = document.querySelector('.dropdown-menu');
@@ -25,8 +113,68 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+//filter2
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    var filterGroup1 = document.getElementById('filter-group-1'); 
+    var filterGroup2 = document.getElementById('filter-group-2'); 
+    var nextArrow = document.getElementById('next-arrow');
+    var prevArrow = document.getElementById('prev-arrow'); 
 
-//search
+ 
+    if (window.innerWidth <= 390) { 
+    filterGroup1.style.display = 'flex'; 
+    filterGroup2.style.display = 'none'; 
+    }
+
+    dropdownToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var parentItem = this.closest('.filter-item');
+            var dropdownMenu = parentItem.querySelector('.dropdown-menu');
+
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+            } else {
+                dropdownMenu.style.display = 'block';
+
+                document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+                    if (menu !== dropdownMenu) {
+                        menu.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
+
+    document.addEventListener('click', function(event) {
+        dropdownToggles.forEach(function(toggle) {
+            var parentItem = toggle.closest('.filter-item');
+            var dropdownMenu = parentItem.querySelector('.dropdown-menu');
+            
+            if (!parentItem.contains(event.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+    });
+
+    nextArrow.addEventListener('click', function() {
+        if (window.innerWidth <= 390) {
+        filterGroup1.style.display = 'none'; 
+        filterGroup2.style.display = 'flex'; 
+    }
+    });
+
+    prevArrow.addEventListener('click', function() {
+        if (window.innerWidth <= 390) {
+        filterGroup1.style.display = 'flex'; 
+        filterGroup2.style.display = 'none'; 
+    }
+    });
+});
+
+//search bar
 document.getElementById('searchInput').addEventListener('click', function() {
   document.getElementById('overlay').style.display = 'block';
   document.getElementById('searchPopup').style.display = 'block';
@@ -36,7 +184,7 @@ document.getElementById('searchInput').addEventListener('click', function() {
 document.getElementById('searchInput').addEventListener('keyup', function(event) {
   event.preventDefault();
   if (event.key === 'Enter') {
-      handleSearch(); // Assuming you have a function to handle the search
+      handleSearch(); 
   }
 });
 
@@ -68,10 +216,10 @@ document.getElementById('searchInput').addEventListener('keyup', function(event)
                     </div>
                 </div>
             `;
-            document.getElementById('searchMessage').style.display = 'none'; 
+            document.getElementById('searchMessage').style.display = 'none';
         } else {
             document.getElementById('searchResults').style.display = 'none';
-            document.getElementById('searchMessage').textContent = 'Please enter "pork"'; 
+            document.getElementById('searchMessage').textContent = 'Please enter "pork"';
         }
     }
 });

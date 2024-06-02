@@ -106,20 +106,26 @@ element.style {
 }
 
 
-@media (min-width: 1368px) {
-  .col-sm-7 {
-      width: 55%;
-  }
+/* 自定义列布局 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-@media (min-width: 1368px) {
-  .col-sm-5 {
-      width: 39%;
-  }
+
+.largesize {
+  flex: 0 0 50%; 
+  max-width: 50%;
 }
-@media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-      float: left;
+
+
+@media (max-width: 768px) {
+  .largesize {
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -155,6 +161,7 @@ element.style {
 
 .section-recipe .ba-recipe-subtitle__cook-time .total-time {
   margin-left: 8px;
+  margin-top: 0px;
   font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -196,6 +203,9 @@ element.style {
   margin-top: 30px;
 }
 
+.description {
+ margin-top: 50px;
+}
 }
 
 h4 {
@@ -388,6 +398,7 @@ img {
 
 .ba-section-title {
   margin-bottom: 25px;
+  flex-direction: column; 
 }
 
 .ba-section-title__super {
@@ -444,11 +455,11 @@ img {
 .servings1 {
   font-size: 14px;
   margin-top: -20px;
-  margin-left: 115px;
+  margin-left: 190px;
 }
 
 .ba-recipe-subtitle__cook-time {
-  margin-left: 35px;
+  margin-left: -30px;
   margin-top: -260px;
 
 }
@@ -461,7 +472,7 @@ img {
     width: 50%; 
 }
 
-.button-add {
+.add-to-cart {
   background-color: #008050;
   color: #fff;
   border: none;
@@ -470,6 +481,69 @@ img {
   cursor: pointer;
   font-size: 16px;
   margin: 10px 0;
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: #008050;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #a6d2c1;
+}
+
+.quantity_edit {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  justify-content: flex-end;
+}
+
+.quantity_frame {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 5px; 
+  font-size: 15px;
+  width: 60px; 
+  height: 20px;
+  gap: 5px; 
+}
+
+
+.minus_button, .plus_button {
+  background-color: #e8e8e8;
+  color: #aeaeae;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 12.5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus_button {
+  background-color: #008050;
+  color: #ffffff;
+}
+
+
+@media (max-width: 390px) {
+  .quantity_frame {
+      margin-left: 30px;}
 }
 
 .price {
@@ -485,17 +559,17 @@ img {
     align-items: center; 
     width: 100%;
     text-align: center; 
-    margin-top: -300px;
+    margin-top: -380px;
     border-bottom: 100px;
   }
 
   .price {
-    margin-top: 20px; 
+    margin-top: 65px; 
     margin-bottom: 150px;
     border-bottom: 50px;
   }
 
-  .button-add {
+  .add-to-cart{
     margin-top: -130px; 
   }
 
@@ -561,7 +635,7 @@ img {
 }
 
 .description {
-  text-align: center; 
+  text-align: left; 
   padding: 10px; 
 }
 
@@ -902,7 +976,6 @@ height: auto;
         text-align: center; 
     }
 }
-
 
 @media (max-width: 390px) {
   .divider {
