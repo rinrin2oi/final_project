@@ -1,8 +1,9 @@
-html, body {
+body {
   margin: 0;
   margin-right: 0px;
   padding: 0;
   overflow-x: hidden;  
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -10,7 +11,6 @@ html, body {
   height: 100%;
   box-sizing: border-box;  
 }
-
 
 .topbar2 {
     border: 0 solid;
@@ -225,7 +225,7 @@ html, body {
   
   @media screen and (min-width: 1368px) {
     .title-words2 {
-      font-family: system-ui;
+      font-family: Arial, sans-serif;
       font-weight: 400;
       letter-spacing: -0.6px;
       text-transform: none;
@@ -257,7 +257,7 @@ html, body {
   
   @media screen and (max-width: 1368px) {
     .title-words3 {
-      font-family: system-ui;
+      font-family: Arial, sans-serif;
       font-weight: 400;
       letter-spacing: -0.6px;
       text-transform: none;
@@ -588,7 +588,7 @@ html, body {
     border: 0 solid;
     margin: 0;
     color: inherit;
-    font-family: system-ui;
+    font-family: Arial, sans-serif;
     font-weight: 500;
     letter-spacing: normal;
     text-transform: none;
@@ -598,7 +598,7 @@ html, body {
   
   @media screen and (min-width: 1368px) {
     .homepage-b8-words {
-      font-family: system-ui;
+      font-family: Arial, sans-serif;
       font-weight: 500;
       letter-spacing: normal;
       text-transform: none;
@@ -627,7 +627,7 @@ html, body {
     border-color: #008050;
     color: #fff;
     padding: 10px 16px;
-    font-family:system-ui;
+    font-family: Arial, sans-serif;
     font-weight: 500;
     letter-spacing: normal;
     text-transform: uppercase;
@@ -666,7 +666,7 @@ html, body {
     border: 0 solid;
     margin: 0;
     margin-top: 8px;
-    font-family:system-ui;
+    font-family: Arial, sans-serif;
     font-weight: 300;
     letter-spacing: normal;
     text-transform: none;
@@ -797,7 +797,7 @@ html, body {
   .homepage-b6 {
     border: 0 solid;
     margin: 0;
-    font-family:system-ui;
+    font-family: Arial, sans-serif;
     font-weight: 500;
     letter-spacing: normal;
     text-transform: none;
@@ -816,7 +816,7 @@ html, body {
     border: 0 solid;
     margin: 0;
     color: #68a25b;
-    font-family: system-ui;
+   font-family: Arial, sans-serif;
     font-weight: 500;
     letter-spacing: normal;
     text-transform: none;
@@ -920,7 +920,7 @@ html, body {
 
   .homepage-part2-words {
         color: #392D60; 
-        font-family: system-ui; 
+        font-family: Arial, sans-serif;
         font-size: 24px; 
         font-weight: bold; 
         line-height: 1.2; 
