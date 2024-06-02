@@ -28,9 +28,6 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   
@@ -108,9 +105,7 @@ a {
   border-style: solid;
   border-radius: 30px;
   text-align: center;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
   cursor: pointer;
   background: #008050;
@@ -599,6 +594,7 @@ a {
     text-transform: none;
     font-size: 18px;
     line-height: 24px;
+    color: #392D60;
   }
   
   @media screen and (min-width: 1368px) {
@@ -919,9 +915,6 @@ a {
     transform: scale(0.6); 
     }
 }
-
-
-
 
   .homepage-part2-words {
         color: #392D60; 
