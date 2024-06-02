@@ -1027,6 +1027,54 @@ height: auto;
 }
 
 
+@media (min-width: 1368px) {
+  .vege1{
+    position: absolute;
+    width: 8%;
+    height: auto;
+    margin-top: -3300px;
+    margin-left: 1250px;
+  }
+  
+  .eggp{
+    position: absolute;
+    width: 8%;
+    height: auto;
+    margin-top: -2800px;
+    margin-left: 10px;
+  }
+  
+  .grass{
+    position: absolute;
+    width: 8%;
+    height: auto;
+    margin-top: -3000px;
+    margin-left: 1220px;
+  }
+  .onion22{
+   display: none;
+  }
+
+  .garlic1{
+    display: none;
+  }
+
+  .onion1{
+    position: absolute;
+    width: 8%;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 40px;
+ }
+  .cucumber{
+    position: absolute;
+    width: 8%;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 1200px;
+  }
+}
+
 @media (max-width: 390px) {
   .onion22{
     position: absolute;
@@ -1043,3 +1091,4 @@ height: auto;
     margin-left: 310px;
   }
 }
+
