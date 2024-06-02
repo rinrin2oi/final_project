@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         event.stopPropagation();
     }
 
-
     addToCartButtons.forEach(function(button) {
         button.addEventListener('click', function() {
             event.preventDefault(); 

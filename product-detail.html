@@ -43,7 +43,9 @@
             <input class="searchmobile" type="text" placeholder="Search" id="searchInput">
             <!-- Shopping cart icon with counter -->
             <div class="shopping-cart">
-                <i class="fa fa-shopping-cart" style="font-size:28px"></i>
+                <a href="shoppingcart.html">
+                    <i class="fa fa-shopping-cart" style="font-size:28px"></i>
+                </a>
                 <div class="cart-counter" id="cart-counter" style="display: none;">0</div>
             </div>
         </div>
@@ -67,19 +69,20 @@
     <div class="container owl-container healthv2">
 
         <section class="section-recipe recipe-main row">
-        <div class="ba-hero-image col-sm-7">
+        <div class="largesize">
         <div class="ba-hero-image__hldr">
         <img class="image-left-steak" width="600px" height="600px" style="height: auto" class="img-max" alt="steak" src="images/steak1.png">
         </div>
         </div>
-        <div class="col-sm-5">
+        <div class="largesize">
         <div class="ba-recipe-title p-15">
         <h1 class="ba-recipe-title__main">
-        Seared Steaks & Butter
+        Seared Steaks & Caper
         </h1>
         <h2 class="ba-recipe-title__sub mt-10">
         with Mashed Potatoes & Brussels Sprouts
         </h2>
+        
         <div class="ba-recipe--details">
         <div class="ba-recipe--detail ba-recipe-subtitle__cook-time">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="icon-svg icon-svg--clock viewBox='0 0 18 18'">
@@ -109,13 +112,19 @@
         </div>
 
         <div class="recipe-main__description p-15">
-            <h4 class="recipe-main__description-title">From the Test Kitchen</h4>
-            <p itemprop="description"><strong>From the Test Kitchen</strong><br>This tasty pasta dish combines crispy prosciutto, gnocchi, Brussels sprouts, and a zesty honey, butter, and lemon sauce with a hint of red pepper flakes.<br>
+           
+            <p class="description"><strong>From the Test Kitchen</strong><br>This tasty pasta dish combines crispy prosciutto, gnocchi, Brussels sprouts, and a zesty honey, butter, and lemon sauce with a hint of red pepper flakes.<br>
             </p>
 
             <div class="price-button-container">
                 <p class="price">$15.00</p>
-                <button class="button-add">ADD</button>
+                <div class="quantity_frame" style="display: none;">
+                    <button class="minus_button" data-index="1">-</button>
+                    <span class="quantity" id="quantity-1">1</span>
+                    <button class="plus_button" data-index="1">+</button>
+               </div>
+               <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
                     <h3 class="Dietary">Dietary Information</h3>
@@ -156,13 +165,11 @@
 <!-- SECTION2: FRESH INGREDIENTS -->
 <section class="section-recipe2 p-15">
     <div class="ba-section-title row">
-    <div class="col-xs-7">
     <div class="ba-section-title__super">
     fresh
     </div>
     <div class="ba-section-title__main">
     ingredients
-    </div>
     </div>
     </div>
 
@@ -172,9 +179,6 @@
     <div class="ba-feature-image__hldr">
     <img class="img-max" src="images/detailfoods.png" alt="detailfoods">
     <img class="food-mobile" src="images/detailsfood2.png" alt="detailfoods-mobile">
-
-    
-    
     </div>
     </div>
     </section>
@@ -182,7 +186,6 @@
 <!-- SECTION3: INSTRUCTIONS -->
 <section class="section-recipe recipe-instructions p-15">
     <div class="ba-section-title row">
-
     <div class="ba-section-title__super">
     step-by-step
     </div>
@@ -253,9 +256,7 @@
     </div>
 </div>
     
-
-
-    </div>
+  </div>
     </div>
     </section>
 
@@ -270,6 +271,6 @@
 <hr class="divider2">
 
 
-<script src="product-detail.css"></script>
+<script src="product-detail.js"></script>
 </body>
 </html>

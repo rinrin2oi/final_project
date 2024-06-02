@@ -654,6 +654,13 @@ html, body {
     color: #fff;
   }
 
+  @media screen and (max-width:390px) {
+    .homepage-b9-words {
+      width:55%;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
 
 .homepage-b10-ad {
     border: 0 solid;
