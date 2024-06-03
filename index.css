@@ -167,6 +167,7 @@ a {
   border: 0 solid;
   margin: 0;
   display: none;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1368px) {
