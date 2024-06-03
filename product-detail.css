@@ -1090,5 +1090,24 @@ height: auto;
     margin-top: -2420px;
     margin-left: 310px;
   }
+
+  .vege1{
+    display: none;
+  }
+  
+  .eggp{
+    display: none;
+  }
+  
+  .grass{
+    display: none;
+  }
+
+  .onion1{
+    display: none;
+ }
+  .cucumber{
+    display: none;
+  }
 }
 
